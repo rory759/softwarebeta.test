@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="modal.css">
+  <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="button.css">
+  <title>Your Company</title>
+  <script type="text/javascript" src="button/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="button/floating-wpp.css">
+  <script type="text/javascript" src="button/floating-wpp.js"></script>
+  <script type="text/javascript" src="flickity.js"></script>
+</head>
+
+<body>
+<!-- Floating Button -->
+<div id="myButton" style="z-index: 3;">
+<script type="text/javascript">
+    $(function () {
+        $('#myButton').floatingWhatsApp({
+            phone: '59163708483',
+            popupMessage: 'Como podemos ayudarte?',
+            message: "Me gustaría obtener más información",
+            showPopup: true,
+            showOnIE: false,
+            headerTitle: 'Bienvenido',
+            headerColor: '#25D366',
+            backgroundColor: '#25D366',
+            buttonImage: '<img src="img/whatsapp.svg" />',
+            position: 'right'
+        });
+    });
+</script>
+</div>
+<!--End Floating Button-->
+
+  <!-- Header -->
+  <section id="header">
+   <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>COMPANY </span>NAME</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#slide-hero" data-after="Inicio">Inicio</a></li>
+            <li><a href="service.html" data-after="Servicios">Servicios</a></li>
+            <li><a href="#" data-after="Productos">Productos</a></li>
+            <li><a href="about_us.html" data-after="Nosotros">Nosotros</a></li>
+            <li><a href="contact.html" data-after="Contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <!-- Slider 2-->
+  <style>
+    /* {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0}*/
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+    
+    /* Slideshow container */
+    .slideshow-container {
+      position: relative;
+      margin: auto;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      /*display: inline-block;*/
+      display: none;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 6s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+
+    @media only screen and (max-width: 675px) {
+      .text h1 span{
+          display: none;
+      }
+
+      .text h1{
+          display: none !important;
+      }
+
+      .text{
+          margin-top: 60% !important;
+      }
+    }
+    </style>
+    
+    <div class="slideshow-container">
+      <div id="slide-hero">
+        <div class="mySlides fade">
+          <!-- Hero Section  -->
+          <section id="hero">
+            <div class="hero container">
+              <div class="text" style="margin-top: 20%;">
+                <h2 style="font-weight: bold; font-size: 3rem; color: #05305F;">DESARROLLO<br>DE SOFTWARE<br><br></h2>
+                <h1>Cumplir con los objetivos propuestos<span></span></h1>
+                <h1>es su misión, la nuestra ajustarlo a<span></span></h1>
+                <h1>su justa  medida.<span></span></h1>
+                <a href="#services" type="button" class="cta">Conócenos</a>
+              </div>
+            </div>
+          </section>
+          <!-- End Hero Section  -->
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="img/slider/shield-nobar-transformed.jpg" style="width:100%; min-height: 100vh;">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="img/slider/chicago.jpg" style="width:100%; min-height: 100vh;">
+        </div>
+        <!--<a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a> -->
+      </div>
+    </div>
+    <br>
+    <!---->
+    <div style="text-align:center">
+      <span class="dot" onclick=""></span> 
+      <span class="dot" onclick=""></span> 
+      <span class="dot" onclick=""></span> 
+    </div>
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides fade");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides fade");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 8000); // Change image every 7 seconds
+  }
+  </script>
+  <!-- End slider 2-->
+
+ 
+
+   <!-- Service Section -->
+   <section id="services">
+          <div class="service-top">
+        <h1 class="section-title">SOFTWARE<span> A MEDIDA</span></h1>
+      </div>
+      <div class="container3">
+        <div class="item3" style="border: none !important; align-self: center;">
+          <img src="img/laptop.jpg" style="width: 100%; height: 100%; padding: 0 !important; margin: 0 !important;">
+        </div>
+
+          <div class="item3">
+          <p style="text-align: center !important;">El software a medida es la solución perfecta para cualquier persona o empresa que busque una experiencia tecnológica única y adaptada a sus necesidades específicas. Ya seas una pequeña empresa que busca optimizar sus procesos, un emprendedor con una idea innovadora, o una organización más grande que busca escalabilidad y eficiencia, el software a medida se ajusta a todos. Proporciona flexibilidad para crecer junto con tu empresa y mejora la experiencia de usuario para satisfacer las expectativas de cualquier audiencia.</p>
+          </div>
+    
+      </div>
+  </section>
+  <!-- End Service Section -->
+
+  <!-- SERVICES -->
+
+    <div class="service-top" style="margin-top: 50px;">
+      <h1 class="section-title">SOFTWARE <span>QUE DESARROLLAMOS</span></h1>
+    </div>
+    <div class="container3">
+    <div class="item3">
+      <div class="icon"><img src="img/3.png" style="width: 70px;"></div><br>
+        <h1 class="section-title" style="font-size: 27px; color: #D5A91C;">Software para Negocios:</h1>
+        <p>¿Estas listo para llevar tu empresa al siguiente nivel? En el camino hacia el crecimiento, es de vital importancia tomar decisiones informadas y estratégicas. Con nuestros sistemas de Gestión Empresarial, proporcionamos todas las herramientas necesarias para que tomes decisiones fundamentadas en datos precisos. 
+          </p><br>
+    </div>
+    <div class="item3">
+      <div class="icon"><img src="img/1.png" style="width: 70px;"></div><br>
+        <h1 class="section-title" style="font-size: 25px; color: #D5A91C;">Diseño de Sitios Web:</h1>
+        <p>Es sorprendente la cantidad de clientes potenciales que están buscando activamente tus productos o servicios en Internet en este momento. No te pierdas la oportunidad de expandir tu alcance y aumentar tus ventas en el vasto mundo digital. ¡No esperes más para conquistar el mundo digital y llevar tu negocio al éxito!
+          </p><br>
+    </div>
+    <div class="item3">
+    <div class="icon"><img src="img/6.png" style="width: 70px;"></div><br>
+      <h1 class="section-title" style="font-size: 25px; color: #D5A91C;">Aplicaciones Móviles:</h1>
+      <p>¿Te gustaría tener tu negocio siempre presente en la vida de tus clientes? ¡Una aplicación móvil es la solución perfecta! Tu empresa estará al alcance de sus manos en todo momento, disponible en cualquier momento y lugar. Sea para comprar o acceder a servicios o una aplicación ofrece una conexión instantánea y conveniente.
+        </p><br>
+    </div>
+  </div>
+
+<!-- BENEFICIOS-->
+<div class="service-top" style="margin-top: 50px;">
+  <h1 class="section-title">BENE<span>F</span>ICIOS</h1>
+</div>
+
+<center>
+    <p style="text-transform: uppercase; width: 80%;">Implementar un software a medida para satisfacer las necesidades específicas de tu empresa puede proporcionar una serie de beneficios significativos. Aquí hay un listado de algunas ventajas clave:</p>
+</center>
+
+<div class="container3">
+  <div class="item3">
+      <div class="icon"><img src="img/benefits/1.png" style="width: 70px;"></div><br>
+        <h1 class="section-title" style="font-size: 25px; color: #D5A91C;">1. Personalización Total</h1>
+        <p>El software a medida se adapta completamente a las necesidades y procesos específicos de tu empresa, ofreciendo una solución única y personalizada.
+          </p><br>
+        </div>
+  <div class="item3">
+    <div class="icon"><img src="img/benefits/2.png" style="width: 70px;"></div><br>
+      <h1 class="section-title" style="font-size: 27px; color: #D5A91C;">2. Eficiencia Operativa</h1>
+      <p>Al alinear el software con los procesos internos de tu empresa, puedes mejorar la eficiencia operativa y reducir los tiempos de ejecución de tareas.       
+        </p><br>
+  </div>
+  <div class="item3">
+  <div class="icon"><img src="img/benefits/3.png" style="width: 70px;"></div><br>
+    <h1 class="section-title" style="font-size: 25px; color: #D5A91C;">3. Automatización de Tareas</h1>
+    <p>La automatización de procesos repetitivos puede ahorrar tiempo y recursos, permitiendo que los empleados se centren en tareas más estratégicas y creativas.
+      </p><br>
+  </div>
+</div>
+
+
+<div class="container3">
+  <div class="item3">
+      <div class="icon"><img src="img/benefits/4.png" style="width: 70px;"></div><br>
+        <h1 class="section-title" style="font-size: 25px; color: #D5A91C;">4. Mejora de la Productividad</h1>
+        <p>Al proporcionar herramientas específicamente diseñadas para las necesidades de tu empresa, puedes mejorar la productividad general de tus empleados.
+          </p><br>
+        </div>
+  <div class="item3">
+    <div class="icon"><img src="img/benefits/5.png" style="width: 70px;"></div><br>
+      <h1 class="section-title" style="font-size: 27px; color: #D5A91C;">5. Mayor Control y Visibilidad</h1>
+      <p>Obtén un mayor control sobre tus operaciones y datos, así como una visión más clara de las actividades comerciales mediante informes y análisis personalizados.
+        </p><br>
+  </div>
+  <div class="item3">
+  <div class="icon"><img src="img/benefits/6.png" style="width: 70px;"></div><br>
+    <h1 class="section-title" style="font-size: 25px; color: #D5A91C;">6. Escalabilidad</h1>
+    <p>      Diseñado para crecer con tu empresa, el software a medida es escalable y puede adaptarse a medida que tu empresa se expande, evitando la necesidad de cambiar a soluciones completamente nuevas con el tiempo.
+      </p><br>
+  </div>
+</div>
+
+
+<!-- Trigger/Open The Modal -->
+<div class="buttoncenter">
+  <button id="modalbtn">VER MÁS</button>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body">
+      <span class="close">&times;</span>
+      <div class="benefits" style="border-bottom: 1px solid white;">
+        <h2>7. MEJORA DE LA TOMA DE DECISIONES:</h2>
+        <p>Accede a información relevante de manera rápida y eficiente, lo que facilita la toma de decisiones informadas y estratégicas.
+        </p>
+      </div>
+      <div class="benefits" style="border-bottom: 1px solid white;">
+        <h2>8. ADAPTABILIDAD A CAMBIOS EMPRESARIALES:</h2>
+        <p>Un software a medida puede adaptarse fácilmente a los cambios en los procesos comerciales y requisitos, lo que permite a tu empresa mantenerse ágil y responder rápidamente a las nuevas demandas del mercado.
+        </p>
+      </div>
+      <div class="benefits" style="border-bottom: 1px solid white;">
+        <h2>9. REDUCCIÓN DE COSTOS A LARGO PLAZO:</h2>
+        <p>Aunque la inversión inicial puede ser más alta, a largo plazo, un software a medida puede resultar más rentable al eliminar la necesidad de licencias y funciones innecesarias presentes en soluciones de software comercial.
+        </p>
+      </div>
+      <div class="benefits" style="border-bottom: 1px solid white;">
+        <h2>10. SEGURIDAD MEJORADA:</h2>
+        <p>Puedes implementar medidas de seguridad personalizadas para proteger los datos sensibles de tu empresa, cumpliendo con los estándares y regulaciones de seguridad específicos de tu industria.
+        </p>
+      </div>
+      <div class="benefits" style="border-bottom: 1px solid white;">
+        <h2>11. COMPETITIVIDAD MEJORADA:</h2>
+        <p>Al tener un software que se adapta perfectamente a tus procesos y requisitos, puedes obtener una ventaja competitiva al mejorar la eficiencia y ofrecer mejores servicios a tus clientes.
+        </p>
+      </div>
+      <div class="benefits" style="border-bottom: 1px solid white;">
+        <h2>12. EXPERIENCIA DEL USUARIO MEJORADA:</h2>
+        <p>Al adaptar la interfaz y la experiencia del usuario a las preferencias y habilidades de tus empleados, puedes mejorar la usabilidad y la aceptación del software.
+        </p>
+      </div>
+      <div class="benefits" style="border-bottom: 1px solid white;">
+        <h2>13. CUMPLIMIENTO NORMATIVO</h2>
+        <p>Puedes diseñar el software para cumplir con los requisitos específicos de regulaciones y normativas de tu industria, garantizando el cumplimiento normativo y la seguridad de los datos.
+      </div>
+      <div class="benefits" style="border-bottom: 1px solid white;">
+        <h2>14. RESOLUCIÓN DE PROBLEMAS ESPECÍFICOS:</h2>
+        <p>Aborda problemas y desafíos específicos de tu industria o empresa mediante la incorporación de funciones y características diseñadas para resolver esas cuestiones particulares.
+        </p>
+      </div>
+      <div class="benefits" style="border-bottom: 1px solid white;">
+        <h2>15. MENOR DEPENDENCIA DE PROVEEDORES EXTERNOS:</h2>
+        <p>Al poseer un software personalizado, reduces la dependencia de proveedores externos y minimizas los problemas potenciales asociados con actualizaciones de terceros o cambios inesperados.
+        </p>
+      </div>
+      <div class="benefits" style="border-bottom: 1px solid white;">
+        <h2>16. FACILITA LA INNOVACIÓN:</h2>
+        <p>Un software a medida puede ser diseñado para incorporar nuevas tecnologías y metodologías de manera más ágil, permitiéndote adoptar rápidamente innovaciones que impulsen la ventaja competitiva.
+        </p>
+      </div>
+      <div class="benefits" style="border-bottom: 1px solid white;">
+        <h2>17. CAPACITACIÓN SIMPLIFICADA:</h2>
+        <p>Al tener un software diseñado específicamente para tus procesos, la curva de aprendizaje para los empleados es generalmente más baja, lo que acelera la capacitación y la adopción.
+        </p>
+      </div>
+      <div class="benefits" style="border-bottom: 1px solid white;">
+        <h2>18. ADAPTABILIDAD A CAMBIOS EMPRESARIALES:</h2>
+        <p>Un software a medida puede adaptarse fácilmente a los cambios en los procesos comerciales y requisitos, lo que permite a tu empresa mantenerse ágil y responder rápidamente a las nuevas demandas del mercado.
+        </p>
+      </div>
+      <div class="benefits" style="border-bottom: 1px solid white;">
+        <h2>19. SOPORTE Y MANTENIMIENTO PERSONALIZADOS:</h2>
+        <p>El soporte técnico y el mantenimiento pueden adaptarse a las necesidades específicas de tu software, asegurando una respuesta rápida y soluciones eficientes.
+        </p>
+      </div>
+      <div class="benefits" style="border-bottom: 1px solid white;">
+        <h2>20. ANÁLISIS Y MÉTRICAS ESPECÍFICAS:</h2>
+        <p>Diseña el software para recopilar datos y métricas específicas que sean relevantes para tus objetivos comerciales, facilitando un análisis más profundo y una toma de decisiones más informada.
+        </p>
+      </div>
+      <div class="benefits" style="border-bottom: 1px solid white;">
+        <h2>21. IMAGEN DE MARCA COHERENTE:</h2>
+        <p> La personalización del diseño y la interfaz del software asegura que la imagen de tu marca se refleje de manera coherente, lo que contribuye a una identidad visual sólida.
+        </p>
+      </div>
+      <div class="benefits" style="border-bottom: 1px solid white;">
+        <h2>22. FACIL ADAPTACIÓN A CAMBIOS TECNOLÓGICOS:</h2>
+        <p>Puedes mantener tu software al día con los avances tecnológicos sin depender de la agenda de actualización de un proveedor externo.
+        </p>
+      </div>
+      <div class="benefits" style="border-bottom: 1px solid white;">
+        <h2>23. MEJORA LA SATISFACCIÓN DEL CLIENTE:</h2>
+        <p>Al tener un software que se adapta exactamente a las necesidades de tus clientes, puedes ofrecer soluciones y servicios más personalizados, mejorando la satisfacción del cliente.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("modalbtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+  <!--<div class="container3">
+    <div class="item3">
+      <h1 class="section-title" style="font-size: 25px; color: #D5A91C;">1.	Innovación Tecnológica</h1>
+      <p>Trabajamos con un equipo de desarrollo joven, que constantemente se actualiza en tecnologías de desarrollo para brindar soluciones eficientes.</p>
+    </div>
+    <div class="item3">
+      <h1 class="section-title" style="font-size: 25px; color: #D5A91C;">2.	Metodologías de Desarrollo agiles</h1>
+      <p>Creemos que el tiempo es el activo mas valioso de toda empresa por lo cual nos enfocamos en desarrollar bajo metodologías que nos permitan optimizar el tiempo de entrega, garantizando resultados de calidad en poco tiempo.</p>
+    </div>
+    <div class="item3">
+      <h1 class="section-title" style="font-size: 25px; color: #D5A91C;">3.	Tráfico Digital</h1>
+      <p>No solo lanzamos tu negocio al mundo digital también atraemos a potenciales clientes mediante optimización en los motores de búsqueda y estrategias de marketing digital. Aparece en los primeros resultados de Google y redes sociales.</p>
+    </div>
+  </div>-->
+
+  <!-- Satisfied Customers-->
+
+  <div class="service-top">
+    <h1 class="section-title" style="margin-top:60px;">PROCESO DE<span> EFICIENCIA</span></h1>
+  </div>
+  
+  <div class="gallery2 js-flickity"
+    data-flickity-options='{ "wrapAround": true }' style="margin-top: 50px; margin-bottom: 100px;">
+    <div class="gallery-cell"><h1 style="color:white">2. PLANIFICACIÓN Y DISEÑO</h1>
+      <p>Crear un plan de desarrollo que incluya fechas límite, asignación de recursos y hitos clave.</p>
+      <p>Diseñar la arquitectura del software antes de comenzar la implementación.</p>
+      <p>Desarrollar prototipos y realizar pruebas de concepto para validar el enfoque de diseño.</p>
+    </div>
+    <div class="gallery-cell"><h1 style="color:white">3. DESARROLLO ITERATIVO</h1>
+      <p>Adoptar metodologías ágiles para permitir iteraciones rápidas y flexibilidad en el desarrollo.</p>
+      <p>Dividir el proyecto en tareas manejables y asignarlas a equipos especializados.</p>
+      <p>Realizar pruebas unitarias y de integración de forma continua durante el desarrollo.</p>
+    </div>
+    <div class="gallery-cell"><h1 style="color:white">4. PRUEBAS RIGUROSAS</h1>
+      <p>Implementar un plan de pruebas exhaustivo que cubra todos los aspectos del software.</p>
+      <p>Realizar pruebas de funcionalidad, rendimiento, seguridad y usabilidad.</p>
+      <p>Automatizar pruebas siempre que sea posible para garantizar la consistencia y la eficiencia.</p>
+    </div>
+    <div class="gallery-cell"><h1 style="color:white">5. DESPLIEGUE Y MANTENIMIENTO</h1>
+      <!--<p>Implementar el software en un entorno de producción, siguiendo las mejores prácticas de despliegue.</p>-->
+      <p>Monitorear el rendimiento del software después del despliegue y abordar cualquier problema rápidamente.</p>
+      <p>Proporcionar actualizaciones y mantenimiento continuo para abordar problemas y mejorar la funcionalidad con el tiempo.</p>
+    </div>
+    <div class="gallery-cell"><h1 style="color:white">1. DEFINICIÓN DE REQUISITOS</h1>
+      <p>Identificar y comprender claramente los requisitos del software.</p>
+      <p>Colaborar estrechamente con los stakeholders para obtener una comprensión completa de las necesidades.</p>
+      <p>Documentar de manera detallada y clara los requisitos funcionales y no funcionales.</p>
+    </div>
+  </div>
+  
+  <style>
+  /* external css: flickity.css */
+  
+  * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 1250px) {
+        .gallery-cell {
+            width: 80% !important;
+        }
+    }
+  
+  .gallery2 {
+    background-color: #0F1426;
+  }
+  
+  .gallery-cell {
+    padding: 20px;
+    text-align: center;
+    width: 31%;
+    height: 250px;
+    margin-right: 30px;
+    background: #0F1426;
+    border: 3px solid #2B2A4E;
+	  border-radius: 2%;
+  }
+  
+  .gallery-cell:hover {
+    background-color: #2B2A4E;
+  }
+
+  /* cell number */
+ /* .gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }*/
+  
+
+  /*! Flickity v2.3.0
+---------------------------------------------- */
+
+.flickity-enabled {
+position: relative;
+}
+
+.flickity-enabled:focus { outline: none; }
+
+.flickity-viewport {
+overflow: hidden;
+position: relative;
+height: 100%;
+}
+
+.flickity-slider {
+position: absolute;
+width: 100%;
+height: 100%;
+}
+
+/* draggable */
+
+.flickity-enabled.is-draggable {
+-webkit-tap-highlight-color: transparent;
+-webkit-user-select: none;
+   -moz-user-select: none;
+    -ms-user-select: none;
+        user-select: none;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+cursor: move;
+cursor: -webkit-grab;
+cursor: grab;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+cursor: -webkit-grabbing;
+cursor: grabbing;
+}
+
+/* ---- flickity-button ---- */
+
+.flickity-button {
+position: absolute;
+background: hsla(0, 0%, 100%, 0.75);
+border: none;
+color: #333;
+}
+
+.flickity-button:hover {
+background: white;
+cursor: pointer;
+}
+
+.flickity-button:focus {
+outline: none;
+box-shadow: 0 0 0 5px #19F;
+}
+
+.flickity-button:active {
+opacity: 0.6;
+}
+
+.flickity-button:disabled {
+opacity: 0.3;
+cursor: auto;
+/* prevent disabled button from capturing pointer up event. #716 */
+pointer-events: none;
+}
+
+.flickity-button-icon {
+fill: currentColor;
+}
+
+/* ---- previous/next buttons ---- */
+
+.flickity-prev-next-button {
+top: 50%;
+width: 44px;
+height: 44px;
+border-radius: 50%;
+/* vertically center */
+transform: translateY(-50%);
+}
+
+.flickity-prev-next-button.previous { left: 10px; }
+.flickity-prev-next-button.next { right: 10px; }
+/* right to left */
+.flickity-rtl .flickity-prev-next-button.previous {
+left: auto;
+right: 10px;
+}
+.flickity-rtl .flickity-prev-next-button.next {
+right: auto;
+left: 10px;
+}
+
+.flickity-prev-next-button .flickity-button-icon {
+position: absolute;
+left: 20%;
+top: 20%;
+width: 60%;
+height: 60%;
+}
+
+/* ---- page dots ---- */
+
+.flickity-page-dots {
+position: absolute;
+width: 100%;
+bottom: -25px;
+padding: 0;
+margin: 0;
+list-style: none;
+text-align: center;
+line-height: 1;
+}
+
+.flickity-rtl .flickity-page-dots { direction: rtl; }
+
+.flickity-page-dots .dot {
+display: inline-block;
+width: 10px;
+height: 10px;
+margin: 0 8px;
+background: #333;
+border-radius: 50%;
+opacity: 0.25;
+cursor: pointer;
+}
+
+.flickity-page-dots .dot.is-selected {
+opacity: 1;
+}
+  
+  </style> 
+
+  <!--End Satisfied customers -->
+
+  <!--FORM-->
+  <div class="buttoncenter" style="margin-top: 50px; margin-bottom: 70px;">
+    <button class="button-10" role="button" onclick='window.location.href = "contact.html"'>
+      <span class="text">SOLICITAR COTIZACIÓN</span>
+    </button>
+    </div>
+<!--END FORM-->
+
+  <!-- 
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="./img/modal2.png" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">ACERCA DE<span> NOSOTROS</span></h1>
+        <h2>LOREM IPSUM</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi odio, quas nihil autem, praesentium eaque iste distinctio magnam dolorem illo atque veritatis. Omnis nobis molestias in animi eos beatae repellat!</p>
+       <a class="cta">LOREM IPSUM AMET</a>
+      </div>
+    </div>
+  </section>
+ -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container" style="padding-top: 20px;">
+      <div class="columnas" style="width: 100%;">
+        <div class="columna">
+          <div class="brand">
+            <button id="summonPokemon" style="background-color: transparent; border-style: none; cursor: pointer;" ><h1>COMPAN<span>Y</span></h1></h1></button>
+           </div>
+           <h2>A su justa medida</h2>
+           <div class="social-icon">
+            <div class="social-item">
+              <a><img src="img/footer/a1.png" /></a>
+            </div>
+            <div class="social-item">
+              <a><img src="img/footer/a2.png" /></a>
+            </div>
+            <div class="social-item">
+              <a><img src="img/footer/a3.png" /></a>
+            </div>
+            <div class="social-item">
+              <a><img src="img/footer/a4.png" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="columna">
+          <h1 style="color: white;">ENLACES</h1><br>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Home</p>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> About Us</p>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Blog page</p>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Terms & Conditions</p>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Privacy policy</p>
+        </div>
+        <div class="columna">
+            <h1 style="color: white;">SERVICIOS</h1><br>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Cyber Security</p>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Web Development</p>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> AI Software</p>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Content Writting</p>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> UI Design</p>
+        </div>
+        <div class="columna">
+          <h1 style="color: white;">CONTACTO</h1><br>
+            <p><img src="img/footer/address.png" style="width: 20px;"/> 88 Brooklyn Street, 600 New York, Usa</p>
+            <p><img src="img/footer/mail.png" style="width: 20px;"/> example@gmail.com</p>
+            <p><img src="img/footer/telephone.png" style="width: 20px;"/> +591 70707070</p><br>
+           
+        </div>
+    </div>
+      <p style="text-align: center; margin-top: 20px; margin-bottom: 20px;">Copyright © 2023 YourCompany. Todos los Derechos Reservados</p>
+    </div>
+  </section>
+
+  <style>
+    footer {
+        color: #fff;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .columnas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;  
+    }
+
+    .columna h1{
+      font-size: 21px;
+    }
+
+    .columna {
+        flex: 1;
+        margin: 20px;
+    }
+
+    @media (max-width: 768px) {
+        .columna {
+            flex: 100%;
+        }
+    }
+
+</style>
+  <!-- End Footer -->
+
+
+  <script src="./app.js"></script>
+
+  <div class="easter"><img src="img/easter/115.gif" class="hidden" id="pokemon" style="display: none; width: 100px; height: 100px;"></div>
+   <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+    <script>
+      $.fn.center = function () {
+        this.css("position","absolute");
+        this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + $(window).scrollTop()) + "px");
+        this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + $(window).scrollLeft()) + "px");
+        return this;
+      }
+      var eventClick = 0;
+      $("#summonPokemon").on("click", function(){
+        eventClick++;  
+        if (eventClick === 3) {
+          $("#pokemon").fadeIn().center();
+          setTimeout(function(){
+          $("#pokemon").fadeOut()
+          }, 2000);;
+          eventClick = 0;
+        };
+      });
+    </script>
+</body>
+</html>
+

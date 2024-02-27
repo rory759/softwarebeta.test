@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="button.css">
+  <!--reviews-->
+  <link rel="stylesheet" href="reviews.css"/>
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <!--end reviews-->
+  <link rel="stylesheet" href="modal.css">
+  <title>Your Company</title>
+  <script type="text/javascript" src="button/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="button/floating-wpp.css">
+  <script type="text/javascript" src="button/floating-wpp.js"></script>
+  <script type="text/javascript" src="flickity.js"></script>
+</head>
+
+<body>
+<!-- Floating Button -->
+<div id="myButton" style="z-index: 3;">
+<script type="text/javascript">
+    $(function () {
+        $('#myButton').floatingWhatsApp({
+            phone: '59163708483',
+            popupMessage: 'Como podemos ayudarte?',
+            message: "Me gustaría obtener más información",
+            showPopup: true,
+            showOnIE: false,
+            headerTitle: 'Bienvenido',
+            headerColor: '#25D366',
+            backgroundColor: '#25D366',
+            buttonImage: '<img src="img/whatsapp.svg" />',
+            position: 'right'
+        });
+    });
+</script>
+</div>
+<!--End Floating Button-->
+
+  <!-- Header -->
+  <section id="header">
+   <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#bgabout">
+            <h1><span>COMPANY </span>NAME</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="index.html" data-after="Inicio">Inicio</a></li>
+            <li><a href="service.html" data-after="Servicios">Servicios</a></li>
+            <li><a href="#projects" data-after="Productos">Productos</a></li>
+            <li><a href="about_us.html" data-after="Nosotros">Nosotros</a></li>
+            <li><a href="contact.html" data-after="Contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <div class="bgabout" id="bgabout">
+    <img src="img/about/about.png" style="width: 100%;"></div>
+    <div class="top-left"><a href="#us" type="button" class="cta2">NOSOTROS</a></div>
+  </div>
+
+  <style>
+    .bgabout{
+      opacity: 0.7;
+      position: relative; 
+      text-align: center;
+    }
+
+    .top-left {
+    position: absolute;
+    padding-top: 20%;
+    padding-left: 15%;
+    top: 8px;
+    left: 16px;
+    font-weight: bold;
+    font-size: 3vw;
+    font-family: arial;
+    color: white;
+    }
+
+    .top-left a{
+      font-size: 3rem;
+      opacity: 0.9;
+    }
+
+    /*cta2 services*/
+    .cta2 {
+      display: inline-block;
+      padding: 8px 20px;
+      color: white;
+      background-color: transparent;
+      border: 5px solid white;
+      border-radius: 20px;
+    }
+
+    .cta2:hover {
+      color: white;
+      background-color: #2bc0c1;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .bgabout img{
+        	height: 100vh;
+      }
+    }
+    /*end*/
+  </style>
+
+    <!--HISTORY-->
+    <div class="service-top">
+      <h1 class="section-title" style="margin-top: 60px;"><span>HISTORIA</span></h1>
+    </div>
+  
+    <div class="container3">
+      <div class="item4" style="width: 80%; text-align: center;">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi exercitationem quas vitae ullam quisquam dolore iusto. Culpa tenetur perspiciatis quam minima, atque quibusdam modi itaque dolorem, distinctio accusamus quia consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione pariatur laborum tempora aliquid quo illo, quia perferendis, in accusantium repellat modi iste ab minus facilis mollitia! Minima quo repellendus porro?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia odio dignissimos reiciendis amet corrupti dolor magni ex libero? Provident vitae aliquid soluta voluptates doloremque nisi mollitia! Fugit, a. Earum, enim.
+          </p>
+    </div>
+    </div>
+  
+    <!-- -->
+  <!--MISION VISION -->
+
+  
+  <div class="service-top">
+    <h1 class="section-title" style="margin-top: 80px;">POR <span>QUÉ</span> ELEGIRNOS</h1>
+  </div>
+
+  <div class="container3">
+    <div class="item4" style="width: 80%; text-align: center;">
+      <h1 class="section-title" style="font-size: 25px; color: #D5A91C; margin-top: 30px;">MISIÓN</h1>
+      <p>Nos dedicamos apasionadamente al desarrollo de software, impulsando la innovación y creando soluciones tecnológicas vanguardistas. 
+        Nuestra misión es transformar las ideas en realidades digitales, brindando productos y servicios que superen las expectativas de nuestros clientes. Guiados por la calidad, la ética y el compromiso, nos esforzamos por ser líderes en el mercado, contribuyendo al progreso tecnológico y mejorando la vida de las personas a través de la tecnología.
+      </p>
+
+      <h1 class="section-title" style="font-size: 25px; color: #D5A91C; margin-top: 50px;">VISIÓN</h1>
+      <p>Visualizamos un futuro donde la tecnología potencie el potencial humano y resuelva desafíos de manera inteligente. Nos proyectamos como líderes reconocidos nacional y porque no internacionalmente en el desarrollo de software, impulsando la innovación y la sostenibilidad. Aspiramos a ser la primera opción para empresas y emprendedores que buscan soluciones tecnológicas de vanguardia, destacando por nuestra excelencia, integridad y compromiso con la mejora continua.</p>
+    </div>
+  </div>
+  <!-- -->
+
+  <!--VALUES-->
+  <div class="service-top">
+    <h1 class="section-title" style="margin-top: 60px;">VALORES<span> DE LA EMPRESA</span></h1>
+  </div>
+
+  <div class="container3">
+    <div class="item4" style="width: 80%; text-align: center;">
+      <h1 class="section-title" style="font-size: 25px; color: #D5A91C; margin-top: 35px;">INNOVACIÓN</h1>
+      <p>En la empresa (Nombre de Empresa) buscamos constantemente nuevas y mejores formas de abordar los desafíos del mercado, adoptando tecnologías emergentes y fomentando la creatividad entre los empleados.
+      </p>
+      <h1 class="section-title" style="font-size: 25px; color: #D5A91C; margin-top: 35px;">ÉTICA</h1>
+      <p>Actuamos con integridad y responsabilidad en todos los trabajos requeridos, respetando la privacidad de los datos y cumpliendo con normativas y estándares éticos.</p>
+      <h1 class="section-title" style="font-size: 25px; color: #D5A91C; margin-top: 35px;">ADAPTIBILIDAD</h1>
+      <p>Estamos dispuestos a adaptarnos a los cambios del mercado, tecnológicos y organizativos, abrazamos la flexibilidad y tenemos la capacidad de adaptarnos a cualquier circunstancia.
+      </p>
+      <h1 class="section-title" style="font-size: 25px; color: #D5A91C; margin-top: 35px;">TRANSPARENCIA</h1>
+      <p>Mantenemos una comunicación abierta y transparente tanto dentro de la empresa como con nuestros clientes y socios, construyendo confianza y relaciones solidas.</p>
+      <h1 class="section-title" style="font-size: 25px; color: #D5A91C; margin-top: 35px;">COLABORACIÓN</h1>
+      <p>Fomentamos un entorno de trabajo colaborativo, donde los equipos comparten conocimientos, ideas y recursos para lograr objetivos comunes.</p>
+    </div> 
+  </div>
+
+  <!-- -->
+
+  <!--INNOVATION-->
+  <div class="service-top">
+    <h1 class="section-title" style="margin-top: 60px;">ENFOQUES<span> EN LA INNOVACIÓN</span></h1>
+  </div>
+
+  <div class="container3">
+    <div class="item4" style="width: 80%; text-align: center;">
+        <p>No simplemente abordamos la innovación, la adoptamos con pasión y la convertimos en nuestra prioridad. Nuestro compromiso con la innovación se ve reflejada en proyectos que van mas allá de lo convencional y en el dominio de tecnologías clave que definen el presente y futuro del desarrollo de software.
+        </p>
+  </div>
+  </div>
+
+  <!-- -->
+
+<!-- DEVELOPERS -->
+<div class="service-top">
+  <h1 class="section-title" style="margin-top: 60px;">NUESTROS PRINCIPALES<span> DESARROLLADORES</span></h1>
+</div>
+
+<div class="container3">
+<div class="item3" style="border: none;">
+    <div class="icon"><img src="img/about/user1.png" style="width: 80%;"></div><br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, beatae iure harum vero esse est quaerat aliquam, illo perspiciatis accusamus ea perferendis consequatur corporis facere tempore numquam, eum molestiae? Quasi.       
+    </p><br>
+</div>
+<div class="item3" style="border: none;">
+  <div class="icon"><img src="img/about/user2.png" style="width: 80%;"></div><br>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae vitae recusandae consequuntur at repudiandae cupiditate quae et quas expedita facere magni consectetur iste quaerat molestias, repellat ullam molestiae a deleniti!      
+  </p><br>
+</div>
+<div class="item3" style="border: none;">
+  <div class="icon"><img src="img/about/user1.png" style="width: 80%;"></div><br>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae vitae recusandae consequuntur at repudiandae cupiditate quae et quas expedita facere magni consectetur iste quaerat molestias, repellat ullam molestiae a deleniti!      
+  </p><br>
+</div>
+</div>
+
+
+<div class="container3">
+  <div class="item3" style="border: none;">
+      <div class="icon"><img src="img/about/user2.png" style="width: 80%;"></div><br>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, beatae iure harum vero esse est quaerat aliquam, illo perspiciatis accusamus ea perferendis consequatur corporis facere tempore numquam, eum molestiae? Quasi.       
+      </p><br>
+  </div>
+  <div class="item3" style="border: none;">
+    <div class="icon"><img src="img/about/user1.png" style="width: 80%;"></div><br>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae vitae recusandae consequuntur at repudiandae cupiditate quae et quas expedita facere magni consectetur iste quaerat molestias, repellat ullam molestiae a deleniti!      
+    </p><br>
+  </div>
+  </div>
+
+</div>
+<!-- -->
+
+
+
+  <!-- Satisfied Customers-->
+
+  <div class="service-top">
+    <h1 class="section-title" style="margin-top: 50px;">CLIENTES<span>  SATISFECHOS</span></h1>
+  </div>
+  
+  <div class="gallery2 js-flickity"
+    data-flickity-options='{ "wrapAround": true }' style="margin-top: 50px; margin-bottom: 100px;">
+
+    <div class="gallery-cell">
+      <div class="testimonial-box-container">
+        <div class="testimonial-box">
+        <div class="box-top">
+               <div class="profile">
+                   <div class="profile-img">
+                    <img src="img/about/user1.png" />
+                </div>
+                      <div class="name-user">
+                    <strong>Touseeq Ijaz</strong>
+                    <span>@touseeqijazweb</span>
+                </div>
+            </div>
+            <div class="reviews">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><!--Empty star-->
+            </div>
+        </div>
+        <div class="client-comment">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="gallery-cell">
+    <div class="testimonial-box-container">
+      <div class="testimonial-box">
+      <div class="box-top">
+             <div class="profile">
+                 <div class="profile-img">
+                  <img src="img/about/user1.png" />
+              </div>
+                    <div class="name-user">
+                  <strong>Touseeq Ijaz</strong>
+                  <span>@touseeqijazweb</span>
+              </div>
+          </div>
+          <div class="reviews">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i><!--Empty star-->
+          </div>
+      </div>
+      <div class="client-comment">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="gallery-cell">
+  <div class="testimonial-box-container">
+    <div class="testimonial-box">
+    <div class="box-top">
+           <div class="profile">
+               <div class="profile-img">
+                <img src="img/about/user1.png" />
+            </div>
+                  <div class="name-user">
+                <strong>Touseeq Ijaz</strong>
+                <span>@touseeqijazweb</span>
+            </div>
+        </div>
+        <div class="reviews">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i><!--Empty star-->
+        </div>
+    </div>
+    <div class="client-comment">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="gallery-cell">
+  <div class="testimonial-box-container">
+    <div class="testimonial-box">
+    <div class="box-top">
+           <div class="profile">
+               <div class="profile-img">
+                <img src="img/about/user1.png" />
+            </div>
+                  <div class="name-user">
+                <strong>Touseeq Ijaz</strong>
+                <span>@touseeqijazweb</span>
+            </div>
+        </div>
+        <div class="reviews">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i><!--Empty star-->
+        </div>
+    </div>
+    <div class="client-comment">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="gallery-cell">
+  <div class="testimonial-box-container">
+    <div class="testimonial-box">
+    <div class="box-top">
+           <div class="profile">
+               <div class="profile-img">
+                <img src="img/about/user1.png" />
+            </div>
+                  <div class="name-user">
+                <strong>Touseeq Ijaz</strong>
+                <span>@touseeqijazweb</span>
+            </div>
+        </div>
+        <div class="reviews">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i><!--Empty star-->
+        </div>
+    </div>
+    <div class="client-comment">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+  </div>
+  
+  <style>
+  /* external css: flickity.css */
+  /*
+  * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body { font-family: sans-serif; }*/
+
+  @media (max-width: 1250px) {
+        .gallery-cell {
+            width: 80% !important;
+        }
+    }
+  
+  .gallery2 {
+    background-color: #0F1426;
+  }
+  
+  .gallery-cell {
+    padding: 20px;
+    text-align: center;
+    width: 31%;
+    height: 250px;
+    margin-right: 30px;
+    background: #0F1426;
+    border: 3px solid #2B2A4E;
+	  border-radius: 2%;
+  }
+  
+  .gallery-cell:hover {
+    background-color: #2B2A4E;
+  }
+
+  /* cell number */
+ /* .gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }*/
+  
+
+  /*! Flickity v2.3.0
+---------------------------------------------- */
+
+.flickity-enabled {
+position: relative;
+}
+
+.flickity-enabled:focus { outline: none; }
+
+.flickity-viewport {
+overflow: hidden;
+position: relative;
+height: 100%;
+}
+
+.flickity-slider {
+position: absolute;
+width: 100%;
+height: 100%;
+}
+
+/* draggable */
+
+.flickity-enabled.is-draggable {
+-webkit-tap-highlight-color: transparent;
+-webkit-user-select: none;
+   -moz-user-select: none;
+    -ms-user-select: none;
+        user-select: none;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+cursor: move;
+cursor: -webkit-grab;
+cursor: grab;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+cursor: -webkit-grabbing;
+cursor: grabbing;
+}
+
+/* ---- flickity-button ---- */
+
+.flickity-button {
+position: absolute;
+background: hsla(0, 0%, 100%, 0.75);
+border: none;
+color: #333;
+}
+
+.flickity-button:hover {
+background: white;
+cursor: pointer;
+}
+
+.flickity-button:focus {
+outline: none;
+box-shadow: 0 0 0 5px #19F;
+}
+
+.flickity-button:active {
+opacity: 0.6;
+}
+
+.flickity-button:disabled {
+opacity: 0.3;
+cursor: auto;
+/* prevent disabled button from capturing pointer up event. #716 */
+pointer-events: none;
+}
+
+.flickity-button-icon {
+fill: currentColor;
+}
+
+/* ---- previous/next buttons ---- */
+
+.flickity-prev-next-button {
+top: 50%;
+width: 44px;
+height: 44px;
+border-radius: 50%;
+/* vertically center */
+transform: translateY(-50%);
+}
+
+.flickity-prev-next-button.previous { left: 10px; }
+.flickity-prev-next-button.next { right: 10px; }
+/* right to left */
+.flickity-rtl .flickity-prev-next-button.previous {
+left: auto;
+right: 10px;
+}
+.flickity-rtl .flickity-prev-next-button.next {
+right: auto;
+left: 10px;
+}
+
+.flickity-prev-next-button .flickity-button-icon {
+position: absolute;
+left: 20%;
+top: 20%;
+width: 60%;
+height: 60%;
+}
+
+/* ---- page dots ---- */
+
+.flickity-page-dots {
+position: absolute;
+width: 100%;
+bottom: -25px;
+padding: 0;
+margin: 0;
+list-style: none;
+text-align: center;
+line-height: 1;
+}
+
+.flickity-rtl .flickity-page-dots { direction: rtl; }
+
+.flickity-page-dots .dot {
+display: inline-block;
+width: 10px;
+height: 10px;
+margin: 0 8px;
+background: #333;
+border-radius: 50%;
+opacity: 0.25;
+cursor: pointer;
+}
+
+.flickity-page-dots .dot.is-selected {
+opacity: 1;
+}
+
+
+  </style> 
+
+  <!-- END SATISFIED CUSTOMERS-->
+
+
+  <div class="service-top" id="us">
+    <h1 class="section-title" style="margin-top: 50px; margin-bottom: 50px">PREGUNTAS<span> FRECUENTES</span></h1>
+  </div>
+  <center>
+  <div class="faq">
+    <details>
+      <summary>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga eligendi quasi neque ullam veritatis recusandae minus earum quaerat a praesentium expedita quas dolores, vero, quod repellat mollitia. Officiis, ea.</summary>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+    </details>
+    <details>
+      <summary>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga eligendi quasi neque ullam veritatis recusandae minus earum quaerat a praesentium expedita quas dolores, vero, quod repellat mollitia. Officiis, ea.</summary>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+    </details>
+    <details>
+      <summary>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga eligendi quasi neque ullam veritatis recusandae minus earum quaerat a praesentium expedita quas dolores, vero, quod repellat mollitia. Officiis, ea.</summary>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+    </details>
+    <details>
+      <summary>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga eligendi quasi neque ullam veritatis recusandae minus earum quaerat a praesentium expedita quas dolores, vero, quod repellat mollitia. Officiis, ea.</summary>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+    </details>
+    <details>
+      <summary>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga eligendi quasi neque ullam veritatis recusandae minus earum quaerat a praesentium expedita quas dolores, vero, quod repellat mollitia. Officiis, ea.</summary>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+    </details>
+  </div>
+</center>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+.faq h1{
+  color: #fff;
+  text-align: center;
+}
+
+details{
+  text-align: left;
+  background-color: #494882;
+  color: #fff;
+  font-size: 1.5rem;
+  width: 70%;
+  margin-bottom: 15px;
+}
+
+summary {
+  background-color: #2b2a4e;
+  padding: 15px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;  
+  transition: height 1s ease;
+  padding-right: 20px;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:after{
+  content: "\002B";
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+details[open] summary:after{
+  content: "\00D7";
+}
+
+details[open] div{
+  padding: .5em 1em;
+}
+  </style>
+
+  <!--FORM-->
+  <div class="buttoncenter" style="margin-top: 50px; margin-bottom: 70px;">
+    <button class="button-10" role="button" onclick='window.location.href = "contact.html"'>
+      <span class="text">SOLICITAR COTIZACIÓN</span>
+    </button>
+    </div>
+<!--END FORM-->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container" style="padding-top: 20px;">
+      <div class="columnas" style="width: 100%;">
+        <div class="columna">
+          <div class="brand">
+            <button id="summonPokemon" style="background-color: transparent; border-style: none; cursor: pointer;" ><h1>COMPAN<span>Y</span></h1></h1></button>
+           </div>
+           <h2>A su justa medida</h2>
+           <div class="social-icon">
+            <div class="social-item">
+              <a><img src="img/footer/a1.png" /></a>
+            </div>
+            <div class="social-item">
+              <a><img src="img/footer/a2.png" /></a>
+            </div>
+            <div class="social-item">
+              <a><img src="img/footer/a3.png" /></a>
+            </div>
+            <div class="social-item">
+              <a><img src="img/footer/a4.png" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="columna">
+          <h1 style="color: white;">ENLACES</h1><br>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Home</p>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> About Us</p>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Blog page</p>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Terms & Conditions</p>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Privacy policy</p>
+        </div>
+        <div class="columna">
+            <h1 style="color: white;">SERVICIOS</h1><br>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Cyber Security</p>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Web Development</p>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> AI Software</p>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Content Writting</p>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> UI Design</p>
+        </div>
+        <div class="columna">
+          <h1 style="color: white;">CONTACTO</h1><br>
+            <p><img src="img/footer/address.png" style="width: 20px;"/> 88 Brooklyn Street, 600 New York, Usa</p>
+            <p><img src="img/footer/mail.png" style="width: 20px;"/> example@gmail.com</p>
+            <p><img src="img/footer/telephone.png" style="width: 20px;"/> +591 70707070</p><br>
+           
+        </div>
+    </div>
+      <p style="text-align: center; margin-top: 20px; margin-bottom: 20px;">Copyright © 2023 YourCompany. Todos los Derechos Reservados</p>
+    </div>
+  </section>
+
+  <style>
+  
+    footer {
+        color: #fff;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .columnas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;  
+    }
+
+    .columna h1{
+      font-size: 21px;
+    }
+
+    .columna {
+        flex: 1;
+        margin: 20px;
+    }
+
+
+    @media (max-width: 768px) {
+        .columna {
+            flex: 100%;
+        }
+    }
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+</style>
+  <!-- End Footer -->
+
+  <script src="./app.js"></script>
+
+  <div class="easter"><img src="img/easter/115.gif" class="hidden" id="pokemon" style="display: none; width: 100px; height: 100px;"></div>
+   <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+    <script>
+      $.fn.center = function () {
+        this.css("position","absolute");
+        this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + $(window).scrollTop()) + "px");
+        this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + $(window).scrollLeft()) + "px");
+        return this;
+      }
+      var eventClick = 0;
+      $("#summonPokemon").on("click", function(){
+        eventClick++;  
+        if (eventClick === 3) {
+          $("#pokemon").fadeIn().center();
+          setTimeout(function(){
+          $("#pokemon").fadeOut()
+          }, 2000);;
+          eventClick = 0;
+        };
+      });
+    </script>
+</body>
+</html>
+

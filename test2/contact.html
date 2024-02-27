@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="modal.css">
+  <link rel="stylesheet" href="button.css">
+  <title>Your Company</title>
+  <script type="text/javascript" src="button/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="button/floating-wpp.css">
+  <script type="text/javascript" src="button/floating-wpp.js"></script>
+  <script type="text/javascript" src="flickity.js"></script>
+</head>
+
+<body>
+<!-- Floating Button -->
+<div id="myButton" style="z-index: 3;">
+<script type="text/javascript">
+    $(function () {
+        $('#myButton').floatingWhatsApp({
+            phone: '59163708483',
+            popupMessage: 'Como podemos ayudarte?',
+            message: "Me gustaría obtener más información",
+            showPopup: true,
+            showOnIE: false,
+            headerTitle: 'Bienvenido',
+            headerColor: '#25D366',
+            backgroundColor: '#25D366',
+            buttonImage: '<img src="img/whatsapp.svg" />',
+            position: 'right'
+        });
+    });
+</script>
+</div>
+<!--End Floating Button-->
+
+  <!-- Header -->
+  <section id="header">
+   <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#bgcontact">
+            <h1><span>COMPANY </span>NAME</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="index.html" data-after="Inicio">Inicio</a></li>
+            <li><a href="service.html" data-after="Servicios">Servicios</a></li>
+            <li><a href="#" data-after="Productos">Productos</a></li>
+            <li><a href="about_us.html" data-after="Nosotros">Nosotros</a></li>
+            <li><a href="contact.html" data-after="Contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <div class="bgcontact" id="bgcontact">
+    <img src="img/contact/779-clean.jpg" style="width: 100%;">
+    <div class="top-left" style="font-size: 3rem !important;">CONTÁCTANOS<hr style="border: 2px solid #7F0F68;">  
+      <p>¿Tienes un proyecto en mente?</p>
+      <p>Nos encantaría saberlo</p>
+      <p>Tómese 5 minutos para llenar nuestro formulario </p>
+      <p>y que podamos conocerlo, para comprender su</p>
+      <p>proyecto y hacerlo realidad.</p>
+      <a href="#form" type="button" class="cta2">VER MÁS</a></div>
+  </div>
+
+  <style>
+    .bgcontact{
+      opacity: 0.7;
+      position: relative; 
+      text-align: center;
+    }
+
+    .bgcontact p{
+       text-align: left !important; 
+       opacity: 1 !important;
+    }
+
+    .top-left {
+    text-align: left;
+    position: absolute;
+    padding-top: 18%;
+    padding-left: 5%;
+    top: 8px;
+    left: 16px;
+    font-weight: bold;
+    font-size: 3vw;
+    font-family: arial;
+    color: white;
+    }
+
+    .top-left a{
+      font-size: 1.5rem;
+      margin-top: 6px;
+    }
+
+    /*cta2 services*/
+    .cta2 {
+      display: inline-block;
+      padding: 8px 20px;
+      color: white;
+      background-color: #2bc0c1;
+      border: 1px solid #2bc0c1;
+      border-radius: 20px;
+    }
+
+    .cta2:hover {
+      color: white;
+      background-color: #880C6E;
+      border: 1px solid #880C6E;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .bgcontact{
+        	height: 100vh;
+      }
+
+      .bgcontact p{
+        display: none;
+      }
+
+      .svtext{
+        display: block !important;
+      }
+    }
+    /*end*/
+  </style>
+
+  <!--FORM-->
+  <div class="service-top" id="form">
+    <h1 class="section-title" style="margin-top: 70px; margin-bottom: 10px;">CONTÁCT<span>A</span>NOS</h1>
+  </div>
+
+  <div class="svtext" style="display: none;">
+  <center>
+    <h1 style="text-transform: uppercase; width: 80%; color:white">NOSOTROS ESTAMOS PARA USTED</h1>
+    <p style="text-transform: uppercase; width: 80%;">¿TIENE UN PROYECTO EN MENTE?</p>
+    <p style="text-transform: uppercase; width: 80%;">NOS ENCANTARÍA SABERLO</p>
+    <p style="text-transform: uppercase; width: 80%;">TÓMESE 5 MINUTOS PARA COMPLETAR NUESTRO FORMULARIO PARA</p>
+    <p style="text-transform: uppercase; width: 80%;"> QUE PODAMOS CONOCERLO, COMPRENDER SU PROYECTO Y HACERLO REALIDAD</p>
+  </center>
+  </div>
+
+
+<div class="container2">
+<div class="column2">
+  <center>
+    <p style="text-transform: uppercase; width: 80%;">INGRESE SUS DATOS DE CONTACTO, UBICACIÓN</p>
+    <p style="text-transform: uppercase; width: 80%;">ELIJA EL SERVICIO POR EL CUAL NOS CONTACTA,</p>
+    <p style="text-transform: uppercase; width: 80%;">DETALLE SU PROYECTO MINUCIOSAMENTE Y NOS</p>
+    <p style="text-transform: uppercase; width: 80%;">PONDREMOS EN CONTACTO CON USTED LO ANTES POSIBLE.</p>
+    <br>
+    <img src="img/robot2.gif" style="width: 50%;">
+  </center>
+</div>
+
+<div class="column2">
+  <div class="form-wrap"> 
+    <form>
+        <input type="text" placeholder="Nombre Completo / Empresa">
+        <input type="email" placeholder="Ciudad">
+        <input type="email" placeholder="Email">
+        <input type="number" placeholder="Teléfono">
+        <label for="fservice" style="color: white; text-align: left;">Elija el servicio que necesite:</label><br><br>
+        <select id="service-selector" name="service-selector">
+          <option value="1">Sitios Web</option>
+          <option value="2">Marketing Digital</option>
+          <option value="3">Sistemas de Gestion de Empresas</option>
+          <option value="4">E commerce</option>
+          <option value="5">Redes Sociales</option>
+          <option value="6">Aplicaciones Moviles</option>
+          <option value="7">Diseño de Marca</option>
+          </select>
+        <textarea rows="7" class="textarea" placeholder="Detalle de la Solicitud"></textarea>
+        <div class="buttoncenter">
+          <input type="button" value="REALIZAR COTIZACIÓN">
+        </div>
+    </form>
+  </div>
+</div>
+</div> 
+<br><br><br><br><br><br><br>
+
+  <style>
+      @media (max-width: 1250px) {
+        .form-wrap {
+            width: 80% !important;
+        }
+    }
+    .form-wrap{ 
+      width: 80%; 
+      padding: 40px 20px; 
+      box-sizing: border-box; 
+      border-radius: 15px; 
+      background-color: #0F1426; 
+      border: 3px solid #2B2A4E;
+      display: flex;
+      margin: auto;
+    }
+
+   /* .form-wrap:hover{
+      background-color: #2B2A4E;
+    }*/
+   
+    input{width: 100%; background: none;  border: 2px solid #2B2A4E; border-radius: 3px; padding: 6px 15px; box-sizing: border-box; margin-bottom: 20px; font-size: 16px; color: #fff;}
+    input[type="text, email, password"]:hover{ border-radius: 10px;}
+
+    .buttoncenter{display: flex; justify-content: center; align-items: center;}
+    input[type="button"]{background: #102770; border: 0; cursor: pointer; color: white; border-radius: 20px; width: 100%; height: 50px;}
+    input[type="button"]:hover{ background: #264097; transition: .6s;}
+    
+    ::placeholder{color: #fff;}
+
+    .textarea{
+      background-color: #0F1426;
+      resize: none;
+      border: 2px solid #2B2A4E;
+      width: 100%;
+      color: white;
+      margin-bottom: 20px;
+      border-radius: 10px; 
+      padding: 6px;
+      font-size: 16px
+    }
+
+    #service-selector{
+      background-color: #0F1426;
+      resize: none;
+      border: 2px solid #2B2A4E;
+      width: 100%;
+      color: white;
+      margin-bottom: 20px;
+      border-radius: 10px; 
+      padding: 6px;
+      font-size: 16px
+    }
+
+    label{
+      resize: none;
+      width: 100%;
+      color: white;
+      margin-bottom: 20px;
+      border-radius: 10px; 
+      padding: 6px;
+      font-size: 16px;
+    }
+
+
+ .container2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column2 {
+  margin-top: 50px;
+  flex: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .column2 {
+    flex: 100%;
+  }
+}
+</style>
+
+<!--END FORM-->
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container" style="padding-top: 20px;">
+      <div class="columnas" style="width: 100%;">
+        <div class="columna">
+          <div class="brand">
+            <button id="summonPokemon" style="background-color: transparent; border-style: none; cursor: pointer;" ><h1>COMPAN<span>Y</span></h1></h1></button>
+           </div>
+           <h2>A su justa medida</h2>
+           <div class="social-icon">
+            <div class="social-item">
+              <a><img src="img/footer/a1.png" /></a>
+            </div>
+            <div class="social-item">
+              <a><img src="img/footer/a2.png" /></a>
+            </div>
+            <div class="social-item">
+              <a><img src="img/footer/a3.png" /></a>
+            </div>
+            <div class="social-item">
+              <a><img src="img/footer/a4.png" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="columna">
+          <h1 style="color: white;">ENLACES</h1><br>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"> Home</p>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> About Us</p>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Blog page</p>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Terms & Conditions</p>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Privacy policy</p>
+        </div>
+        <div class="columna">
+            <h1 style="color: white;">SERVICIOS</h1><br>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Cyber Security</p>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Web Development</p>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> AI Software</p>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Content Writting</p>
+            <p><img src="img/footer/bullet.png" style="width: 20px;"/> UI Design</p>
+        </div>
+        <div class="columna">
+          <h1 style="color: white;">CONTACTO</h1><br>
+            <p><img src="img/footer/address.png" style="width: 20px;"/> 88 Brooklyn Street, 600 New York, Usa</p>
+            <p><img src="img/footer/mail.png" style="width: 20px;"/> example@gmail.com</p>
+            <p><img src="img/footer/telephone.png" style="width: 20px;"/> +591 70707070</p><br>
+           
+        </div>
+    </div>
+      <p style="text-align: center; margin-top: 20px; margin-bottom: 20px;">Copyright © 2023 YourCompany. Todos los Derechos Reservados</p>
+    </div>
+  </section>
+
+  <style>
+       .active, .dot:hover {
+      background-color: #717171;
+    }
+
+    footer {
+        color: #fff;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .columnas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;  
+    }
+
+    .columna h1{
+      font-size: 21px;
+    }
+
+    .columna {
+        flex: 1;
+        margin: 20px;
+    }
+
+
+    @media (max-width: 768px) {
+        .columna {
+            flex: 100%;
+        }
+    }
+</style>
+  <!-- End Footer -->
+
+
+  <script src="./app.js"></script>
+
+  <div class="easter"><img src="img/easter/115.gif" class="hidden" id="pokemon" style="display: none; width: 100px; height: 100px;"></div>
+   <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+    <script>
+      $.fn.center = function () {
+        this.css("position","absolute");
+        this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + $(window).scrollTop()) + "px");
+        this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + $(window).scrollLeft()) + "px");
+        return this;
+      }
+      var eventClick = 0;
+      $("#summonPokemon").on("click", function(){
+        eventClick++;  
+        if (eventClick === 3) {
+          $("#pokemon").fadeIn().center();
+          setTimeout(function(){
+          $("#pokemon").fadeOut()
+          }, 2000);;
+          eventClick = 0;
+        };
+      });
+    </script>
+</body>
+</html>
+
