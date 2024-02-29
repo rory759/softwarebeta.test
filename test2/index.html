@@ -50,7 +50,7 @@
             <div class="bar"></div>
           </div>
           <ul>
-            <li><a href="#slide-hero" data-after="Inicio">Inicio</a></li>
+            <li><a href="#slide-hero" data-after="Inicio" style="color: #2bc0c1 !important;">Inicio</a></li>
             <li><a href="service.html" data-after="Servicios">Servicios</a></li>
             <li><a href="#" data-after="Productos">Productos</a></li>
             <li><a href="about_us.html" data-after="Nosotros">Nosotros</a></li>
@@ -122,7 +122,7 @@
     /* Fading animation */
     .fade {
       animation-name: fade;
-      animation-duration: 6s;
+      animation-duration: 7s;
     }
     
     @keyframes fade {
@@ -148,6 +148,18 @@
           margin-top: 60% !important;
       }
     }
+
+    .imgContainer{
+      position: relative;
+    }
+
+    .imgContainer .cta{
+      position: absolute;
+      top: 52%;
+      left: 3%;
+      /*transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);*/
+    }
     </style>
     
     <div class="slideshow-container">
@@ -161,26 +173,34 @@
                 <h1>Cumplir con los objetivos propuestos<span></span></h1>
                 <h1>es su misión, la nuestra ajustarlo a<span></span></h1>
                 <h1>su justa  medida.<span></span></h1>
-                <a href="#services" type="button" class="cta">Conócenos</a>
+                <a href="#services" type="button" class="cta">conócenos</a>
               </div>
             </div>
           </section>
           <!-- End Hero Section  -->
         </div>
-        
+    
         <div class="mySlides fade">
-          <img src="img/slider/shield-nobar-transformed.jpg" style="width:100%; min-height: 100vh;">
+          <div class="imgContainer">
+            <img src="img/slider/shield-nobar-transformed.jpg" style="width:100%; min-height: 100vh;">
+            <a href="#services" type="button" class="cta">conócenos</a>
+          </div>
         </div>
-        
         <div class="mySlides fade">
-          <img src="img/slider/chicago.jpg" style="width:100%; min-height: 100vh;">
-        </div>
-        <!--<a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a> -->
+          <div class="imgContainer">
+            <img src="img/slider/chicago.jpg" style="width:100%; min-height: 100vh;">
+            <a href="#services" type="button" class="cta" style="opacity: 0.7;">conócenos</a>
+          </div>
+        </div>  
+      </div>  
+    </div>     
+
+       <!--<a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
       </div>
     </div>
-    <br>
-    <!---->
+    <br>-->
+
     <div style="text-align:center">
       <span class="dot" onclick=""></span> 
       <span class="dot" onclick=""></span> 
@@ -232,11 +252,8 @@
   </script>
   <!-- End slider 2-->
 
- 
-
    <!-- Service Section -->
-   <section id="services">
-          <div class="service-top">
+          <div class="service-top" style="margin-top: 60px;">
         <h1 class="section-title">SOFTWARE<span> A MEDIDA</span></h1>
       </div>
       <div class="container3">
@@ -249,35 +266,35 @@
           </div>
     
       </div>
-  </section>
   <!-- End Service Section -->
 
   <!-- SERVICES -->
-
+  <section id="services">
     <div class="service-top" style="margin-top: 50px;">
       <h1 class="section-title">SOFTWARE <span>QUE DESARROLLAMOS</span></h1>
     </div>
+
     <div class="container3">
     <div class="item3">
       <div class="icon"><img src="img/3.png" style="width: 70px;"></div><br>
         <h1 class="section-title" style="font-size: 27px; color: #D5A91C;">Software para Negocios:</h1>
-        <p>¿Estas listo para llevar tu empresa al siguiente nivel? En el camino hacia el crecimiento, es de vital importancia tomar decisiones informadas y estratégicas. Con nuestros sistemas de Gestión Empresarial, proporcionamos todas las herramientas necesarias para que tomes decisiones fundamentadas en datos precisos. 
+        <p>¿Estas listo para llevar tu empresa al siguiente nivel? En el camino hacia el crecimiento, es de vital importancia tomar decisiones informadas y estratégicas. Con nuestros sistemas de Gestión Empresarial, proporcionamos todas las herramientas necesarias para que tomes decisiones fundamentadas con datos precisos. 
           </p><br>
     </div>
     <div class="item3">
       <div class="icon"><img src="img/1.png" style="width: 70px;"></div><br>
-        <h1 class="section-title" style="font-size: 25px; color: #D5A91C;">Diseño de Sitios Web:</h1>
+        <h1 class="section-title" style="font-size: 25px; color: #D5A91C;">Sitios Web Responsivos:</h1>
         <p>Es sorprendente la cantidad de clientes potenciales que están buscando activamente tus productos o servicios en Internet en este momento. No te pierdas la oportunidad de expandir tu alcance y aumentar tus ventas en el vasto mundo digital. ¡No esperes más para conquistar el mundo digital y llevar tu negocio al éxito!
           </p><br>
     </div>
     <div class="item3">
     <div class="icon"><img src="img/6.png" style="width: 70px;"></div><br>
-      <h1 class="section-title" style="font-size: 25px; color: #D5A91C;">Aplicaciones Móviles:</h1>
+      <h1 class="section-title" style="font-size: 25px; color: #D5A91C;">Aplicaciones Móviles Android, IOS:</h1>
       <p>¿Te gustaría tener tu negocio siempre presente en la vida de tus clientes? ¡Una aplicación móvil es la solución perfecta! Tu empresa estará al alcance de sus manos en todo momento, disponible en cualquier momento y lugar. Sea para comprar o acceder a servicios o una aplicación ofrece una conexión instantánea y conveniente.
         </p><br>
     </div>
-  </div>
-
+    </div>
+  </section>
 <!-- BENEFICIOS-->
 <div class="service-top" style="margin-top: 50px;">
   <h1 class="section-title">BENE<span>F</span>ICIOS</h1>
@@ -722,63 +739,73 @@ opacity: 1;
  -->
 
   <!-- Footer -->
-  <section id="footer">
-    <div class="footer container" style="padding-top: 20px;">
-      <div class="columnas" style="width: 100%;">
-        <div class="columna">
-          <div class="brand">
-            <button id="summonPokemon" style="background-color: transparent; border-style: none; cursor: pointer;" ><h1>COMPAN<span>Y</span></h1></h1></button>
-           </div>
-           <h2>A su justa medida</h2>
-           <div class="social-icon">
-            <div class="social-item">
-              <a><img src="img/footer/a1.png" /></a>
-            </div>
-            <div class="social-item">
-              <a><img src="img/footer/a2.png" /></a>
-            </div>
-            <div class="social-item">
-              <a><img src="img/footer/a3.png" /></a>
-            </div>
-            <div class="social-item">
-              <a><img src="img/footer/a4.png" /></a>
-            </div>
+<section id="footer">
+  <div class="footer container" style="padding-top: 20px;">
+    <div class="columnas" style="width: 100%;">
+      <div class="columna">
+        <div class="brand">
+          <button id="summonPokemon" style="background-color: transparent; border-style: none; cursor: pointer;" ><h1>COMPAN<span>Y</span></h1></h1></button>
+         </div>
+         <h2>A su justa medida</h2>
+         <div class="social-icon">
+          <div class="social-item">
+            <a><img src="img/footer/a1.png" /></a>
+          </div>
+          <div class="social-item">
+            <a><img src="img/footer/a2.png" /></a>
+          </div>
+          <div class="social-item">
+            <a><img src="img/footer/a3.png" /></a>
+          </div>
+          <div class="social-item">
+            <a><img src="img/footer/a4.png" /></a>
           </div>
         </div>
-        <div class="columna">
-          <h1 style="color: white;">ENLACES</h1><br>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Home</p>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> About Us</p>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Blog page</p>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Terms & Conditions</p>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Privacy policy</p>
-        </div>
-        <div class="columna">
-            <h1 style="color: white;">SERVICIOS</h1><br>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Cyber Security</p>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Web Development</p>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> AI Software</p>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Content Writting</p>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> UI Design</p>
-        </div>
-        <div class="columna">
-          <h1 style="color: white;">CONTACTO</h1><br>
-            <p><img src="img/footer/address.png" style="width: 20px;"/> 88 Brooklyn Street, 600 New York, Usa</p>
-            <p><img src="img/footer/mail.png" style="width: 20px;"/> example@gmail.com</p>
-            <p><img src="img/footer/telephone.png" style="width: 20px;"/> +591 70707070</p><br>
-           
-        </div>
-    </div>
-      <p style="text-align: center; margin-top: 20px; margin-bottom: 20px;">Copyright © 2023 YourCompany. Todos los Derechos Reservados</p>
-    </div>
-  </section>
+      </div>
+      <div class="columna">
+        <h1 style="color: white;">ENLACES</h1><br>
+          <a href="#hero"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Inicio</p></a>
+          <a href="service.html"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Servicios</p></a>
+          <a href="about_us.html"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Nosotros</p></a>
+          <a href="contact.html"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Contacto</p></a>
+          <a href="#"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Página de Blog</p></a>
+          <a href="terms_and_conditions.html"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Términos y Condiciones</p></a>
+      </div>
+      <div class="columna">
+          <h1 style="color: white;">SERVICIOS</h1><br>
+          <a href="https://bit.ly/info-desarrollo-web2"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Sitios Web</p></a>
+          <a href="https://bit.ly/info-gestion-emp"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Gestión Empresarial</p></a>
+          <a href="https://bit.ly/info-app-design"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Desarrollo de Aplicaciones</p></a>
+          <a href="https://bit.ly/info-admin-rrss"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Redes Sociales</p></a>
+          <a href="https://bit.ly/inf-digital-marketing"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Marketing Digital</p></a>
+          <a href="https://bit.ly/info-img-design"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Diseño de Marca</p></a>
+      </div>
+      <div class="columna">
+        <h1 style="color: white;">CONTACTO</h1><br>
+          <p class="dir"><img src="img/footer/address.png" style="width: 20px;"/> 88 Brooklyn Street, 600 New York, Usa</p>
+          <p class="dir"><img src="img/footer/mail.png" style="width: 20px;"/> example@gmail.com</p>
+          <p class="dir"><img src="img/footer/telephone.png" style="width: 20px;"/> +591 70707070</p><br>
+      </div>
+  </div>
+    <p class="dir" style="text-align: center; margin-top: 20px; margin-bottom: 20px;">Copyright © 2023 YourCompany. Todos los Derechos Reservados</p>
+  </div>
+</section>
 
-  <style>
-    footer {
-        color: #fff;
-        padding: 20px;
-        text-align: left;
-    }
+<style>
+  .active, .dot:hover {
+  background-color: #717171;
+  }
+
+  .link:hover{
+      color: #2BA6AD !important;
+  }
+
+  footer {
+      color: #fff;
+      padding: 20px;
+      text-align: left;
+  }
+
 
     .columnas {
         display: flex;
@@ -800,7 +827,6 @@ opacity: 1;
             flex: 100%;
         }
     }
-
 </style>
   <!-- End Footer -->
 

@@ -59,7 +59,7 @@
           </div>
           <ul>
             <li><a href="index.html" data-after="Inicio">Inicio</a></li>
-            <li><a href="service.html" data-after="Servicios">Servicios</a></li>
+            <li><a href="service.html" data-after="Servicios" style="color: #2bc0c1 !important;">Servicios</a></li>
             <li><a href="#projects" data-after="Productos">Productos</a></li>
             <li><a href="about_us.html" data-after="Nosotros">Nosotros</a></li>
             <li><a href="contact.html" data-after="Contacto">Contacto</a></li>
@@ -131,6 +131,73 @@
     <h1 class="section-title" style="margin-top: 100px;">POR <span>QUÉ</span> ELEGIRNOS</h1>
   </div>
 
+  <style>
+    .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    }
+  
+    .box:hover{
+        background-color: #2B2A4E;
+      } 
+      
+    .box {
+      display: flex;
+      flex-direction: column;
+      width: 28%;
+      padding: 20px;
+      margin-bottom: 40px;
+      box-sizing: border-box;
+      background-color: #0F1426;
+      text-align: center;
+      border: 3px solid #2B2A4E;
+      border-radius: 2%;
+    }
+  
+    .box img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .box h2 {
+      text-transform: uppercase;
+      font-weight: lighter;
+      font-size: 25px; color: #D5A91C;
+      padding: 10px;
+    }
+  
+    .box p {
+      padding: 10px;
+      flex: 1;
+    }
+  
+    .box button {
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin: 10px 0px;
+      cursor: pointer;
+    }
+  
+    @media (max-width: 768px) {
+      .box {
+        width: 80%;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .box {
+        width: 100%;
+      }
+    }
+    </style>
+  
+  
   <!-- -->
   <div class="container3">
     <div class="item3">
@@ -147,163 +214,100 @@
     </div>
   </div>
   <!-- -->
+
   <!-- SERVICES -->
   <div class="service-top" style="margin-top: 60px;" id="sv">
     <h1 class="section-title" >SERV<span>I</span>CIOS</h1>
   </div>
 
-  <div class="container3">
-    <div class="item3">
-      <div class="icon"><img src="img/1.png" style="width: 70px;"></div><br>
-        <h1 class="section-title" style="font-size: 25px; color: #D5A91C;">Desarrollo de Sitios Web:</h1>
-        <p>¿Sabías que tienes clientes buscándote en Internet?
-          Impulsa las ventas de tu empresa en el mundo digital. Descubre como podemos llevar tu negocio al siguiente nivel, llevando tu negocio a Internet. ¡Conquista el mundo digital ahora mismo!
-          </p><br>
+  <div class="flex-container">
+    <div class="box">
+      <div class="icon"><img src="img/1.png" style="width: 70px;"></div>
+      <h2>Desarrollo de Sitios Web:
+      </h2>
+      <p>Es sorprendente la cantidad de clientes potenciales que están buscando activamente tus productos o servicios en Internet en este momento. No te pierdas la oportunidad de expandir tu alcance y aumentar tus ventas en el vasto mundo digital. ¡No esperes más para conquistar el mundo digital y llevar tu negocio al éxito!
+      </p>
+      <div class="buttons">
+        <div class="row2">
+          <button class="facebook" onclick="window.location.href='https://bit.ly/info-desarrollo-web2';">
+            <span><i class="fab fa-whatsapp"></i></span>
+            MÁS INFORMACIÓN</button>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="icon"><img src="img/3.png" style="width: 70px;"></div>
+      <h2>SISTEMAS DE GESTIÓN EMPRESARIAL:</h2>
+      <p>¿Tu empresa está preparada para el crecimiento?
+        En el camino hacia el crecimiento, es de vital importancia tomar decisiones informadas y estratégicas. Con nuestros sistemas de Gestión Empresarial, proporcionamos todas las herramientas necesarias para que tomes decisiones precisas.
+          </p>
           <div class="buttons">
             <div class="row2">
-               <button class="facebook">
+               <button class="facebook" onclick="window.location.href='https://bit.ly/info-gestion-emp';">
                <span><i class="fab fa-whatsapp"></i></span>
                MÁS INFORMACIÓN</button>
             </div>
          </div>
-    <!--<div class="buttoncenter">
-      <button id="modalbtn">VER MÁS</button>
-    </div>-->
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <div class="modal-body">
-          <span class="close">&times;</span>
-          <div class="benefits" style="border-bottom: 1px solid white;">
-            <h2>7. MEJORA DE LA TOMA DE DECISIONES:</h2>
-            <p>Accede a información relevante de manera rápida y eficiente, lo que facilita la toma de decisiones informadas y estratégicas.
-            </p><br>
-            <div class="buttons">
-              <div class="row2">
-                 <button class="facebook">
-                 <span><i class="fab fa-whatsapp"></i></span>
-                 MÁS INFORMACIÓN</button>
-              </div>
-           </div>
-          </div>
+    </div>
+    <div class="box">
+      <div class="icon"><img src="img/6.png" style="width: 70px;"></div>
+      <h2>APLICACIONES MÓVILES ANDROID, IOS:</h2>
+      <p>¿Te gustaría llevar tu negocio al bolsillo de tus clientes? 
+      ¡Una aplicación móvil es la solución perfecta! Tu empresa estará al alcance de sus manos en todo momento, disponible en cualquier momento y lugar. Sea para comprar o acceder a servicios o una aplicación ofrece una conexión instantánea y conveniente.
+        </p>
+      <div class="buttons">
+        <div class="row2">
+          <button class="facebook" onclick="window.location.href='https://bit.ly/info-app-design';">
+           <span><i class="fab fa-whatsapp"></i></span>
+           MÁS INFORMACIÓN</button>
+        </div>
+     </div>
+    </div>
+  </div>
+  
+  <div class="flex-container">
+    <div class="box">
+      <div class="icon"><img src="img/5.png" style="width: 70px;"></div>
+      <h2>ADMINISTRACIÓN DE REDES SOCIALES:
+      </h2>
+      <p>¿Estas cansado de invertir tu tiempo y esfuerzo en audiencias que no general resultados tangibles? En lugar de perseguir "likes" vacíos, nos centramos en convertir seguidores en clientes. Nuestra estrategia se basa en identificar y conectar con aquellas personas que no solo están dispuestas a escucharte, sino también a realizar una compra.
+      </p>
+      <div class="buttons">
+        <div class="row2">
+          <button class="facebook" onclick="window.location.href='https://bit.ly/info-admin-rrss';">
+            <span><i class="fab fa-whatsapp"></i></span>
+            MÁS INFORMACIÓN</button>
         </div>
       </div>
     </div>
-
-<!--<script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("modalbtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>!-->
-
+    <div class="box">
+      <div class="icon"><img src="img/2.png" style="width: 70px;"></div>
+      <h2>MARKETING DIGITAL Y POSICIONAMIENTO:</h2>
+      <p>¿Deseas que tu empresa se destaque como la primera opción en el inmenso mundo digital?
+        Desde estrategias de marketing para redes sociales hasta el meticuloso SEO (Optimización para motores de búsqueda), nuestro servicio esta diseñado para atraer potenciales clientes en cualquier sector y aumentar significativamente tus ventas.            
+        </p>
+          <div class="buttons">
+            <div class="row2">
+              <button class="facebook" onclick="window.location.href='https://bit.ly/inf-digital-marketing';">
+               <span><i class="fab fa-whatsapp"></i></span>
+               MÁS INFORMACIÓN</button>
+            </div>
+         </div>
+    </div>
+    <div class="box">
+      <div class="icon"><img src="img/7.png" style="width: 70px;"></div>
+      <h2>DISEÑO DE MARCA E IMAGEN</h2>
+      <p>Nuestro equipo está aquí para guiarte en la construcción de tu marca desde cero. Desde la creación de un logotipo distintivo hasta el diseño empaques atractivos, además nos encargamos del diseño de hojas membretadas y otros elementos de papelería que reflejen la esencia de tu negocio en cada interacción.
+      </p>
+      <div class="buttons">
+        <div class="row2">
+          <button class="facebook" onclick="window.location.href='https://bit.ly/info-img-design';">
+           <span><i class="fab fa-whatsapp"></i></span>
+           MÁS INFORMACIÓN</button>
+        </div>
+     </div>
+    </div>
   </div>
-  <div class="item3">
-    <div class="icon"><img src="img/2.png" style="width: 70px;"></div><br>
-      <h1 class="section-title" style="font-size: 27px; color: #D5A91C;">Marketing Digital:</h1>
-      <p>¿Quieres que tu empresa sea la primera opción en el mundo Digital?
-        Desde campañas de Facebook hasta SEO (Optimización para motores de búsqueda) nos ayudaran a conseguir clientes potenciales para aumentar tus ventas.        
-        </p><br>
-    <!--<div class="buttoncenter">
-      <button id="modalbtn">VER MÁS</button>
-    </div>-->
-    <div class="buttons">
-      <div class="row2">
-         <button class="facebook">
-         <span><i class="fab fa-whatsapp"></i></span>
-         MÁS INFORMACIÓN</button>
-      </div>
-   </div>
-
-   
-</div>
-<div class="item3">
-  <div class="icon"><img src="img/3.png" style="width: 70px;"></div><br>
-    <h1 class="section-title" style="font-size: 25px; color: #D5A91C;">Gestión Empresarial:</h1>
-    <p>¿Tu empresa está preparada para el crecimiento?
-      En el camino hacia el crecimiento, es de vital importancia tomar decisiones informadas y estratégicas, con nuestros sistemas de Gestión de empresas crecer no será un problema. 
-      </p><br>
-      <div class="buttons">
-        <div class="row2">
-           <button class="facebook">
-           <span><i class="fab fa-whatsapp"></i></span>
-           MÁS INFORMACIÓN</button>
-        </div>
-     </div>
-</div>
-</div>
-  <!-- -->
-
-  <!-- -->
-  <div class="container3">
-  <!-- <div class="item3">
-      <div class="icon"><img src="img/4.png" style="width: 70px;"></div><br>
-        <h1 class="section-title" style="font-size: 25px; color: #D5A91C;">E-Commerce:</h1>
-        <p>Con nuestro servicio de E-commerce, tu tienda online siempre vende. Aprovecha la oportunidad de llegar a tus clientes en cualquier momento y lugar.
-          </p><br>
-      </div>--> 
-  <div class="item3">
-    <div class="icon"><img src="img/5.png" style="width: 70px;"></div><br>
-      <h1 class="section-title" style="font-size: 25px; color: #D5A91C;">Administración de Redes Sociales:</h1>
-      <p>Deja de perder el tiempo hablando con todo el mundo y empieza a hablar solo con las personas que si te van a escuchar y comprar. Mas allá de los “likes” nos enfocamos en convertir seguidores en clientes.
-        </p><br>
-        <div class="buttons">
-          <div class="row2">
-             <button class="facebook">
-             <span><i class="fab fa-whatsapp"></i></span>
-             MÁS INFORMACIÓN</button>
-          </div>
-       </div>
-  </div>
-<div class="item3">
-  <div class="icon"><img src="img/6.png" style="width: 70px;"></div><br>
-    <h1 class="section-title" style="font-size: 25px; color: #D5A91C;">Aplicaciones Móviles:</h1>
-    <p>¿Te gustaría llevar tu negocio al bolsillo de tus clientes? 
-      ¡Una aplicación móvil es la solución perfecta! Tu empresa estará al alcance de sus manos en todo momento, disponible en cualquier momento y lugar.
-      </p><br>
-      <div class="buttons">
-        <div class="row2">
-           <button class="facebook">
-           <span><i class="fab fa-whatsapp"></i></span>
-           MÁS INFORMACIÓN</button>
-        </div>
-     </div>
- </div>
-<div class="item3">
-  <div class="icon"><img src="img/7.png" style="width: 70px;"></div><br>
-    <h1 class="section-title" style="font-size: 25px; color: #D5A91C;">Diseño de Marca e Imagen:</h1>
-    <p>Te ayudamos a construir tu marcacreación de un logotipo distintivo hasta el diseño empaques atractivos, hojas membretadas y todo lo que tu negocio necesite para tener una identidad memorable.
-      </p><br>
-      <div class="buttons">
-        <div class="row2">
-           <button class="facebook">
-           <span><i class="fab fa-whatsapp"></i></span>
-           MÁS INFORMACIÓN</button>
-        </div>
-     </div>
- </div>
-</div>
-  <!-- -->
 
   <!-- Satisfied Customers-->
 
@@ -699,69 +703,73 @@ opacity: 1;
   End Carousel -->
 
   <!-- Footer -->
-  <section id="footer">
-    <div class="footer container" style="padding-top: 20px;">
-      <div class="columnas" style="width: 100%;">
-        <div class="columna">
-          <div class="brand">
-            <button id="summonPokemon" style="background-color: transparent; border-style: none; cursor: pointer;" ><h1>COMPAN<span>Y</span></h1></h1></button>
-           </div>
-           <h2>A su justa medida</h2>
-           <div class="social-icon">
-            <div class="social-item">
-              <a><img src="img/footer/a1.png" /></a>
-            </div>
-            <div class="social-item">
-              <a><img src="img/footer/a2.png" /></a>
-            </div>
-            <div class="social-item">
-              <a><img src="img/footer/a3.png" /></a>
-            </div>
-            <div class="social-item">
-              <a><img src="img/footer/a4.png" /></a>
-            </div>
+<section id="footer">
+  <div class="footer container" style="padding-top: 20px;">
+    <div class="columnas" style="width: 100%;">
+      <div class="columna">
+        <div class="brand">
+          <button id="summonPokemon" style="background-color: transparent; border-style: none; cursor: pointer;" ><h1>COMPAN<span>Y</span></h1></h1></button>
+         </div>
+         <h2>A su justa medida</h2>
+         <div class="social-icon">
+          <div class="social-item">
+            <a><img src="img/footer/a1.png" /></a>
+          </div>
+          <div class="social-item">
+            <a><img src="img/footer/a2.png" /></a>
+          </div>
+          <div class="social-item">
+            <a><img src="img/footer/a3.png" /></a>
+          </div>
+          <div class="social-item">
+            <a><img src="img/footer/a4.png" /></a>
           </div>
         </div>
-        <div class="columna">
-          <h1 style="color: white;">ENLACES</h1><br>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Home</p>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> About Us</p>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Blog page</p>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Terms & Conditions</p>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Privacy policy</p>
-        </div>
-        <div class="columna">
-            <h1 style="color: white;">SERVICIOS</h1><br>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Cyber Security</p>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Web Development</p>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> AI Software</p>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Content Writting</p>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> UI Design</p>
-        </div>
-        <div class="columna">
-          <h1 style="color: white;">CONTACTO</h1><br>
-            <p><img src="img/footer/address.png" style="width: 20px;"/> 88 Brooklyn Street, 600 New York, Usa</p>
-            <p><img src="img/footer/mail.png" style="width: 20px;"/> example@gmail.com</p>
-            <p><img src="img/footer/telephone.png" style="width: 20px;"/> +591 70707070</p><br>
-           
-        </div>
-    </div>
-      <p style="text-align: center; margin-top: 20px; margin-bottom: 20px;">Copyright © 2023 YourCompany. Todos los Derechos Reservados</p>
-    </div>
-  </section>
+      </div>
+      <div class="columna">
+        <h1 style="color: white;">ENLACES</h1><br>
+          <a href="#hero"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Inicio</p></a>
+          <a href="service.html"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Servicios</p></a>
+          <a href="about_us.html"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Nosotros</p></a>
+          <a href="contact.html"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Contacto</p></a>
+          <a href="#"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Página de Blog</p></a>
+          <a href="terms_and_conditions.html"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Términos y Condiciones</p></a>
+      </div>
+      <div class="columna">
+          <h1 style="color: white;">SERVICIOS</h1><br>
+          <a href="https://bit.ly/info-desarrollo-web2"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Sitios Web</p></a>
+          <a href="https://bit.ly/info-gestion-emp"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Gestión Empresarial</p></a>
+          <a href="https://bit.ly/info-app-design"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Desarrollo de Aplicaciones</p></a>
+          <a href="https://bit.ly/info-admin-rrss"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Redes Sociales</p></a>
+          <a href="https://bit.ly/inf-digital-marketing"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Marketing Digital</p></a>
+          <a href="https://bit.ly/info-img-design"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Diseño de Marca</p></a>
+      </div>
+      <div class="columna">
+        <h1 style="color: white;">CONTACTO</h1><br>
+          <p class="dir"><img src="img/footer/address.png" style="width: 20px;"/> 88 Brooklyn Street, 600 New York, Usa</p>
+          <p class="dir"><img src="img/footer/mail.png" style="width: 20px;"/> example@gmail.com</p>
+          <p class="dir"><img src="img/footer/telephone.png" style="width: 20px;"/> +591 70707070</p><br>
+      </div>
+  </div>
+    <p class="dir" style="text-align: center; margin-top: 20px; margin-bottom: 20px;">Copyright © 2023 YourCompany. Todos los Derechos Reservados</p>
+  </div>
+</section>
 
-  <style>
+<style>
+  .active, .dot:hover {
+  background-color: #717171;
+  }
 
+  .link:hover{
+      color: #2BA6AD !important;
+  }
 
-       .active, .dot:hover {
-      background-color: #717171;
-    }
+  footer {
+      color: #fff;
+      padding: 20px;
+      text-align: left;
+  }
 
-    footer {
-        color: #fff;
-        padding: 20px;
-        text-align: left;
-    }
 
     .columnas {
         display: flex;

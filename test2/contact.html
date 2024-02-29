@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,7 +53,7 @@
             <li><a href="service.html" data-after="Servicios">Servicios</a></li>
             <li><a href="#" data-after="Productos">Productos</a></li>
             <li><a href="about_us.html" data-after="Nosotros">Nosotros</a></li>
-            <li><a href="contact.html" data-after="Contacto">Contacto</a></li>
+            <li><a href="contact.html" data-after="Contacto" style="color: #2bc0c1 !important;">Contacto</a></li>
           </ul>
         </div>
       </div>
@@ -164,30 +164,46 @@
 
 <div class="column2">
   <div class="form-wrap"> 
-    <form>
-        <input type="text" placeholder="Nombre Completo / Empresa">
-        <input type="email" placeholder="Ciudad">
-        <input type="email" placeholder="Email">
-        <input type="number" placeholder="Teléfono">
+    <form method="post" action="https://script.google.com/macros/s/AKfycby7IF_R_dJI27bEnhmwkfqSbdmDXZUPT-LA1LjLSmiW-QaJP3Tqyucz4o61V4_v1vM4QQ/exec" name="contact-form">
+        <input name="nombre" type="text" placeholder="Nombre Completo / Empresa" required>
+        <input name="ciudad" type="text" placeholder="Ciudad" required>
+        <input name="email" type="email" placeholder="Email" required>
+        <input name="telefono" type="number" placeholder="Teléfono" required>
         <label for="fservice" style="color: white; text-align: left;">Elija el servicio que necesite:</label><br><br>
-        <select id="service-selector" name="service-selector">
-          <option value="1">Sitios Web</option>
-          <option value="2">Marketing Digital</option>
-          <option value="3">Sistemas de Gestion de Empresas</option>
-          <option value="4">E commerce</option>
-          <option value="5">Redes Sociales</option>
-          <option value="6">Aplicaciones Moviles</option>
-          <option value="7">Diseño de Marca</option>
+        <select name="servicio" id="servicio" required>
+          <option value="Sitios Web">Sitios Web</option>
+          <option value="Marketing Digital">Marketing Digital</option>
+          <option value="Sistemas de Gestion Empresarial">Sistemas de Gestion de Empresas</option>
+          <option value="E commerce">E commerce</option>
+          <option value="Redes Sociales">Redes Sociales</option>
+          <option value="Aplicaciones Movile">Aplicaciones Moviles</option>
+          <option value="Diseño de Marca">Diseño de Marca</option>
           </select>
-        <textarea rows="7" class="textarea" placeholder="Detalle de la Solicitud"></textarea>
+        <textarea rows="7" name="detalle" class="textarea" placeholder="Detalle de la Solicitud" required></textarea>
         <div class="buttoncenter">
-          <input type="button" value="REALIZAR COTIZACIÓN">
+         <input type="submit" value="REALIZAR COTIZACIÓN" id="submit">
         </div>
     </form>
+    
   </div>
 </div>
 </div> 
 <br><br><br><br><br><br><br>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby7IF_R_dJI27bEnhmwkfqSbdmDXZUPT-LA1LjLSmiW-QaJP3Tqyucz4o61V4_v1vM4QQ/exec'
+  
+  const form = document.forms['contact-form']
+  
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => alert("!Datos Enviados! Nos pondremos en contacto con usted lo antes posible." ))
+    .then(() => { window.location.reload(); })
+    .catch(error => console.error('Error!', error.message))
+  })
+  </script>
+  
 
   <style>
       @media (max-width: 1250px) {
@@ -214,8 +230,8 @@
     input[type="text, email, password"]:hover{ border-radius: 10px;}
 
     .buttoncenter{display: flex; justify-content: center; align-items: center;}
-    input[type="button"]{background: #102770; border: 0; cursor: pointer; color: white; border-radius: 20px; width: 100%; height: 50px;}
-    input[type="button"]:hover{ background: #264097; transition: .6s;}
+    input[type="submit"]{background: #102770; border: 0; cursor: pointer; color: white; border-radius: 20px; width: 100%; height: 50px;}
+    input[type="submit"]:hover{ background: #630E58; transition: .6s;}
     
     ::placeholder{color: #fff;}
 
@@ -231,7 +247,7 @@
       font-size: 16px
     }
 
-    #service-selector{
+    #servicio{
       background-color: #0F1426;
       resize: none;
       border: 2px solid #2B2A4E;
@@ -254,88 +270,94 @@
     }
 
 
- .container2 {
-  display: flex;
-  flex-wrap: wrap;
-}
+    .container2 {
+      display: flex;
+      flex-wrap: wrap;
+    }
 
-.column2 {
-  margin-top: 50px;
-  flex: 50%;
-  padding: 20px;
-  box-sizing: border-box;
-}
+    .column2 {
+      margin-top: 50px;
+      flex: 50%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
 
-@media (max-width: 600px) {
-  .column2 {
-    flex: 100%;
-  }
-}
+    @media (max-width: 600px) {
+      .column2 {
+        flex: 100%;
+      }
+    }
 </style>
 
 <!--END FORM-->
-  <!-- Footer -->
-  <section id="footer">
-    <div class="footer container" style="padding-top: 20px;">
-      <div class="columnas" style="width: 100%;">
-        <div class="columna">
-          <div class="brand">
-            <button id="summonPokemon" style="background-color: transparent; border-style: none; cursor: pointer;" ><h1>COMPAN<span>Y</span></h1></h1></button>
-           </div>
-           <h2>A su justa medida</h2>
-           <div class="social-icon">
-            <div class="social-item">
-              <a><img src="img/footer/a1.png" /></a>
-            </div>
-            <div class="social-item">
-              <a><img src="img/footer/a2.png" /></a>
-            </div>
-            <div class="social-item">
-              <a><img src="img/footer/a3.png" /></a>
-            </div>
-            <div class="social-item">
-              <a><img src="img/footer/a4.png" /></a>
-            </div>
+
+<!-- Footer -->
+<section id="footer">
+  <div class="footer container" style="padding-top: 20px;">
+    <div class="columnas" style="width: 100%;">
+      <div class="columna">
+        <div class="brand">
+          <button id="summonPokemon" style="background-color: transparent; border-style: none; cursor: pointer;" ><h1>COMPAN<span>Y</span></h1></h1></button>
+         </div>
+         <h2>A su justa medida</h2>
+         <div class="social-icon">
+          <div class="social-item">
+            <a><img src="img/footer/a1.png" /></a>
+          </div>
+          <div class="social-item">
+            <a><img src="img/footer/a2.png" /></a>
+          </div>
+          <div class="social-item">
+            <a><img src="img/footer/a3.png" /></a>
+          </div>
+          <div class="social-item">
+            <a><img src="img/footer/a4.png" /></a>
           </div>
         </div>
-        <div class="columna">
-          <h1 style="color: white;">ENLACES</h1><br>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"> Home</p>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> About Us</p>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Blog page</p>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Terms & Conditions</p>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Privacy policy</p>
-        </div>
-        <div class="columna">
-            <h1 style="color: white;">SERVICIOS</h1><br>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Cyber Security</p>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Web Development</p>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> AI Software</p>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> Content Writting</p>
-            <p><img src="img/footer/bullet.png" style="width: 20px;"/> UI Design</p>
-        </div>
-        <div class="columna">
-          <h1 style="color: white;">CONTACTO</h1><br>
-            <p><img src="img/footer/address.png" style="width: 20px;"/> 88 Brooklyn Street, 600 New York, Usa</p>
-            <p><img src="img/footer/mail.png" style="width: 20px;"/> example@gmail.com</p>
-            <p><img src="img/footer/telephone.png" style="width: 20px;"/> +591 70707070</p><br>
-           
-        </div>
-    </div>
-      <p style="text-align: center; margin-top: 20px; margin-bottom: 20px;">Copyright © 2023 YourCompany. Todos los Derechos Reservados</p>
-    </div>
-  </section>
+      </div>
+      <div class="columna">
+        <h1 style="color: white;">ENLACES</h1><br>
+          <a href="#hero"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Inicio</p></a>
+          <a href="service.html"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Servicios</p></a>
+          <a href="about_us.html"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Nosotros</p></a>
+          <a href="contact.html"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Contacto</p></a>
+          <a href="#"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Página de Blog</p></a>
+          <a href="terms_and_conditions.html"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Términos y Condiciones</p></a>
+      </div>
+      <div class="columna">
+          <h1 style="color: white;">SERVICIOS</h1><br>
+          <a href="https://bit.ly/info-desarrollo-web2"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Sitios Web</p></a>
+          <a href="https://bit.ly/info-gestion-emp"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Gestión Empresarial</p></a>
+          <a href="https://bit.ly/info-app-design"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Desarrollo de Aplicaciones</p></a>
+          <a href="https://bit.ly/info-admin-rrss"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Redes Sociales</p></a>
+          <a href="https://bit.ly/inf-digital-marketing"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Marketing Digital</p></a>
+          <a href="https://bit.ly/info-img-design"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Diseño de Marca</p></a>
+      </div>
+      <div class="columna">
+        <h1 style="color: white;">CONTACTO</h1><br>
+          <p class="dir"><img src="img/footer/address.png" style="width: 20px;"/> 88 Brooklyn Street, 600 New York, Usa</p>
+          <p class="dir"><img src="img/footer/mail.png" style="width: 20px;"/> example@gmail.com</p>
+          <p class="dir"><img src="img/footer/telephone.png" style="width: 20px;"/> +591 70707070</p><br>
+      </div>
+  </div>
+    <p class="dir" style="text-align: center; margin-top: 20px; margin-bottom: 20px;">Copyright © 2023 YourCompany. Todos los Derechos Reservados</p>
+  </div>
+</section>
 
-  <style>
-       .active, .dot:hover {
-      background-color: #717171;
-    }
+<style>
+  .active, .dot:hover {
+  background-color: #717171;
+  }
 
-    footer {
-        color: #fff;
-        padding: 20px;
-        text-align: left;
-    }
+  .link:hover{
+      color: #2BA6AD !important;
+  }
+
+  footer {
+      color: #fff;
+      padding: 20px;
+      text-align: left;
+  }
 
     .columnas {
         display: flex;
