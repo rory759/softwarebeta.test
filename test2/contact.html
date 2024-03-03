@@ -61,47 +61,23 @@
   </section>
   <!-- End Header -->
 
-  <div class="bgcontact" id="bgcontact">
-    <img src="img/contact/779-clean.jpg" style="width: 100%;">
-    <div class="top-left" style="font-size: 3rem !important;">CONTÁCTANOS<hr style="border: 2px solid #7F0F68;">  
-      <p>¿Tienes un proyecto en mente?</p>
-      <p>Nos encantaría saberlo</p>
-      <p>Tómese 5 minutos para llenar nuestro formulario </p>
-      <p>y que podamos conocerlo, para comprender su</p>
-      <p>proyecto y hacerlo realidad.</p>
-      <a href="#form" type="button" class="cta2">VER MÁS</a></div>
-  </div>
+    <!-- Hero Section  -->
+    <section id="hero3">
+      <div class="hero3 container">
+        <div class="text" style="margin-top: 20%; margin-left: 2%;">
+          <h2 style="font-weight: bold; font-size: 3.5rem; color: white;">CONTÁCTANOS</h2><hr style="border: 2px solid #7F0F68;">  
+          <p>¿Tienes un proyecto en mente?</p>
+          <p>Nos encantaría saberlo</p>
+          <p>Tómese 5 minutos para llenar nuestro formulario </p>
+          <p>y que podamos conocerlo, para comprender su</p>
+          <p>proyecto y hacerlo realidad.</p>
+          <br><a href="#form" type="button" class="cta2">VER MÁS</a></div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section  -->
 
   <style>
-    .bgcontact{
-      opacity: 0.7;
-      position: relative; 
-      text-align: center;
-    }
-
-    .bgcontact p{
-       text-align: left !important; 
-       opacity: 1 !important;
-    }
-
-    .top-left {
-    text-align: left;
-    position: absolute;
-    padding-top: 18%;
-    padding-left: 5%;
-    top: 8px;
-    left: 16px;
-    font-weight: bold;
-    font-size: 3vw;
-    font-family: arial;
-    color: white;
-    }
-
-    .top-left a{
-      font-size: 1.5rem;
-      margin-top: 6px;
-    }
-
     /*cta2 services*/
     .cta2 {
       display: inline-block;
@@ -110,6 +86,7 @@
       background-color: #2bc0c1;
       border: 1px solid #2bc0c1;
       border-radius: 20px;
+      font-size: 1.5rem;
     }
 
     .cta2:hover {
@@ -119,12 +96,13 @@
     }
 
     @media only screen and (max-width: 768px) {
-      .bgcontact{
-        	height: 100vh;
+      .hero3 p{
+        display: none;
       }
 
-      .bgcontact p{
-        display: none;
+      .container .text{
+          margin-top: 0% !important;
+          margin-left: 2% !important;
       }
 
       .svtext{
@@ -293,7 +271,7 @@
       box-sizing: border-box;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 1200px) {
       .column2 {
         flex: 100%;
       }
@@ -336,13 +314,13 @@
           <a href="terms_and_conditions.html"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Términos y Condiciones</p></a>
       </div>
       <div class="columna">
-          <h1 style="color: white;">SERVICIOS</h1><br>
-          <a href="https://bit.ly/info-desarrollo-web2"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Sitios Web</p></a>
-          <a href="https://bit.ly/info-gestion-emp"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Gestión Empresarial</p></a>
-          <a href="https://bit.ly/info-app-design"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Desarrollo de Aplicaciones</p></a>
-          <a href="https://bit.ly/info-admin-rrss"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Redes Sociales</p></a>
-          <a href="https://bit.ly/inf-digital-marketing"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Marketing Digital</p></a>
-          <a href="https://bit.ly/info-img-design"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Diseño de Marca</p></a>
+        <h1 style="color: white;">SERVICIOS</h1><br>
+        <a href="service.html#box1"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Sitios Web</p></a>
+        <a href="service.html#box2"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Gestión Empresarial</p></a>
+        <a href="service.html#box3"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Desarrollo de Aplicaciones</p></a>
+        <a href="service.html#box4"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Redes Sociales</p></a>
+        <a href="service.html#box5"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Marketing Digital</p></a>
+        <a href="service.html#box6"><p class="link"><img src="img/footer/bullet.png" style="width: 20px;"/> Diseño de Marca</p></a>
       </div>
       <div class="columna">
         <h1 style="color: white;">CONTACTO</h1><br>
@@ -356,6 +334,8 @@
 </section>
 
 <style>
+   img {vertical-align: middle;}
+
   .active, .dot:hover {
   background-color: #717171;
   }
