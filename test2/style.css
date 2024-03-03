@@ -27,12 +27,18 @@
 	border-radius: 2%;
 }
 
-@media screen and (min-width: 900px) {
+@media (max-width: 950px) {
+	.gallery-cell {
+		width: 80% !important;
+	}
+}
+
+@media screen and (min-width: 951px) {
     .item3:nth-child(1),
     .item3:nth-child(2),
     .item3:nth-child(3) {
-        flex: 0 0 25%;
-        max-width: 25%;
+        flex: 0 0 28%;
+        max-width: 28%;
     }
 }
 
@@ -62,74 +68,6 @@ a {
 	align-items: center;
 	justify-content: center;
 }
-
-/*carousel
-#carousel {
-	/*background-color: #f2f2f2;
-	min-height: 65vh;
-	width: 100%;
-	align-items: center;
-	justify-content: center;
-}
-	@-webkit-keyframes scroll {
-	0% {
-	-webkit-transform: translateX(0);
-	transform: translateX(0);
-	}
-	100% {
-	-webkit-transform: translateX(calc(-250px * 7));
-	transform: translateX(calc(-250px * 7));
-	}
-	}
-	@keyframes scroll {
-	0% {
-	-webkit-transform: translateX(0);
-	transform: translateX(0);
-	}
-	100% {
-	-webkit-transform: translateX(calc(-250px * 7));
-	transform: translateX(calc(-250px * 7));
-	}
-	}
-	.slider {
-	background: pr;
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-	height: 120px;
-	margin: auto;
-	overflow: hidden;
-	position: relative;
-	width: 90%;
-	}
-	.slider::before, .slider::after {
-	background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-	content: "";
-	height: 120px;
-	position: absolute;
-	width: 200px;
-	z-index: 2;
-	}
-	.slider::after {
-	right: 0;
-	top: 0;
-	-webkit-transform: rotateZ(180deg);
-	transform: rotateZ(180deg);
-	}
-	.slider::before {
-	left: 0;
-	top: 0;
-	}
-	.slider .slide-track {
-	-webkit-animation: scroll 20s linear infinite;
-	animation: scroll 20s linear infinite;
-	display: flex;
-	width: calc(250px * 14);
-	}
-	.slider .slide {
-	padding-left: 10px;
-	height: 120px;
-	width: 285px;
-	}
-carousel end*/
 
 #email {
 	background-color: #f2f2f2;
@@ -418,45 +356,125 @@ p {
 }*/
 /* End Hero Section */
 
-/* Hero 2*/
+/* Hero2 service*/ 
 #hero2 {
-	background-image: url(./img/shield-backup.jpg);
+	background-image: url(./img/services/927.jpg);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
-	min-height: 102vh;
-}
+	z-index: 1;
+	min-height: 100vh;
 
-/*#hero2::after {
+}
+#hero2::after {
 	content: '';
 	position: absolute;
 	left: 0;
 	top: 0;
 	height: 100%;
 	width: 100%;
-}*/
-
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0.7;
+	z-index: -1;
+}
 #hero2 .hero2 {
 	max-width: 1200px;
-	margin: 0 auto;
+	/*margin: 0 auto;*/
+	margin-left: 1,5%;
 	padding: 0 50px;
 	justify-content: flex-start;
 }
 #hero2 h1 {
 	display: block;
 	width: fit-content;
-	font-size: 4rem;
+	font-size: 2.5rem !important;
 	position: relative;
-	color: white;
+	color: transparent;
+	animation: text_reveal 0.5s ease forwards;
+	animation-delay: 1s;
 }
 
-#hero2 h1 span {
+/* End Hero 2*/
+
+
+/* Hero2 service*/ 
+#hero3 {
+	background-image: url(./img/contact/779-clean.jpg);
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+	min-height: 100vh;
+	background-position-x: 40%;
+	background-position-y: 50%;
+}
+#hero3::after {
+	content: '';
 	position: absolute;
-	top: 0;
 	left: 0;
+	top: 0;
 	height: 100%;
-	width: 0;
-	background-color: #2bc0c1;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0.7;
+	z-index: -1;
+}
+#hero3 .hero3 {
+	max-width: 1200px;
+	/*margin: 0 auto;*/
+	margin-left: 1,5%;
+	padding: 0 50px;
+	justify-content: flex-start;
+}
+#hero3 h1 {
+	display: block;
+	width: fit-content;
+	font-size: 2.5rem !important;
+	position: relative;
+	color: transparent;
+	animation: text_reveal 0.5s ease forwards;
+	animation-delay: 1s;
+}
+
+/* End Hero 2*/
+
+
+#hero4 {
+	background-image: url(./img/about/about.jpg);
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+	min-height: 100vh;
+	background-position-x: 40%;
+	background-position-y: 50%;
+}
+#hero4::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0.7;
+	z-index: -1;
+}
+#hero4 .hero4 {
+	max-width: 1200px;
+	/*margin: 0 auto;*/
+	margin-left: 1,5%;
+	padding: 0 50px;
+	justify-content: flex-start;
+}
+#hero4 h1 {
+	display: block;
+	width: fit-content;
+	font-size: 2.5rem !important;
+	position: relative;
+	color: transparent;
+	animation: text_reveal 0.5s ease forwards;
+	animation-delay: 1s;
 }
 
 /* End Hero 2*/
